@@ -1,0 +1,32 @@
+@import './../../scss/global.scss';
+.wrapper {
+  position: relative;
+
+  .textWrapper {
+    width: 863px;
+    padding-left: 64px;
+    padding-top: 300px;
+  }
+
+  .mainHeader {
+    text-align: center;
+  }
+  .text {
+    color: $color-text;
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 72px;
+  }
+  .coloredText {
+    font-size: 90px;
+    font-weight: 800;
+    line-height: 92px;
+   
+  }
+  img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 48px;
+  }
+}

@@ -1,0 +1,45 @@
+$color: white;
+$size: 20px;
+$delay: 0.5;
+
+@keyframes flipToSquare {
+  0% {
+    transform: rotateX(-90deg);
+  }
+  50%,
+  75% {
+    transform: rotateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: rotateX(0);
+  }
+}
+
+
+.flipToSquare {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: (3 * $size);
+  width: (3 * $size);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  transform: rotate(45deg);
+
+  div {
+    animation: flipToSquare 1.5s calc(var(--delay) * 1s) infinite backwards;
+    background-color: $color;
+
+    @for $e from 1 through 9 {
+      &:nth-child(#{$e}) {
+        --delay: #{$e * 0.1};
+      }
+    }
+  }
+
+}
+

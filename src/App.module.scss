@@ -1,0 +1,152 @@
+@import "./scss/global.scss";
+//Start styles
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+input,
+textarea,
+button,
+select,
+a,
+div {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+p {
+  margin: 0;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* для адаптивной верстки, проверить, какой элемент вылазит */
+// * {
+//   border: 1px solid red;
+//   box-sizing: border-box;
+// }
+:root {
+  --toggle-color: #2978b5;
+  // --toggle-color: #f08a5d;
+}
+
+.content {
+  padding: 30px;
+  height: 100vh
+}
+
+body {
+  // background: linear-gradient(94deg, #333159, #3a3d79, #884a57, #87a08a, #817aaf, #333159);
+  // // background: linear-gradient(94deg, #343358, #717DBC, #FB887B, #61E7CD, #717DBC, #343358);
+  // background-size: 3200% 3200%;
+
+  // -webkit-animation: AnimationName 24s ease infinite;
+  // -moz-animation: AnimationName 24s ease infinite;
+  // -o-animation: AnimationName 24s ease infinite;
+  // animation: AnimationName 24s ease infinite;
+
+  background-image: url("./assets/images/102.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:29% 0%}
+  50%{background-position:72% 100%}
+  100%{background-position:29% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:29% 0%}
+  50%{background-position:72% 100%}
+  100%{background-position:29% 0%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:29% 0%}
+  50%{background-position:72% 100%}
+  100%{background-position:29% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:29% 0%}
+  50%{background-position:72% 100%}
+  100%{background-position:29% 0%}
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px rgba(139, 139, 139, 0.753); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #9D76B3,  #FB887B, #61E7CD, #717DBC);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg,#9D76B3,#FB887B, #61E7CD, #717DBC);
+}
