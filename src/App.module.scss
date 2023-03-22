@@ -33,6 +33,7 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  color: $color-text;
 }
 input,
 button,
@@ -94,18 +95,18 @@ h6 {
 }
 
 body {
-  // background: linear-gradient(94deg, #333159, #3a3d79, #884a57, #87a08a, #817aaf, #333159);
-  // // background: linear-gradient(94deg, #343358, #717DBC, #FB887B, #61E7CD, #717DBC, #343358);
-  // background-size: 3200% 3200%;
+  background: linear-gradient(94deg, #423e81, #3a3d79, #975261, #87a08a, #817aaf, #333159);
 
-  // -webkit-animation: AnimationName 24s ease infinite;
-  // -moz-animation: AnimationName 24s ease infinite;
-  // -o-animation: AnimationName 24s ease infinite;
-  // animation: AnimationName 24s ease infinite;
+  background-size: 3200% 3200%;
 
-  background-image: url("./assets/images/102.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-animation: AnimationName 24s ease infinite;
+  -moz-animation: AnimationName 24s ease infinite;
+  -o-animation: AnimationName 24s ease infinite;
+  animation: AnimationName 24s ease infinite;
+
+  // background-image: url("./assets/images/102.svg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
 }
 
 @-webkit-keyframes AnimationName {
