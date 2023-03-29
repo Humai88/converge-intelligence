@@ -1,0 +1,32 @@
+@import "./../scss/global.scss";
+
+.wrapper{
+  h2 {
+    overflow: hidden;
+    text-align: center;
+    font-size: 100px;
+    font-family: "Medium";
+  }
+  
+  h2:before,
+  h2:after {
+    background-color: $color-text;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 358px;
+  }
+  
+  h2:before {
+    right: 0.3em;
+    margin-left: -50%;
+  }
+  
+  h2:after {
+    left: 0.3em;
+    margin-right: -50%;
+  }
+}
+

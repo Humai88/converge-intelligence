@@ -1,5 +1,51 @@
 @import "./scss/global.scss";
 //Start styles
+@font-face {
+  font-family: "Bold";
+  src: local("MADEOkineSansPERSONALUSE-Bold"),
+    url("./fonts/MADEOkineSansPERSONALUSE-Bold.otf") format("truetype");
+}
+@font-face {
+  font-family: "Bold-Outline";
+  src: local("MADEOkineSansPERSONALUSE-BoldOutline"),
+    url("./fonts/MADEOkineSansPERSONALUSE-BoldOutline.otf") format("truetype");
+}
+@font-face {
+  font-family: "Light";
+  src: local("MADEOkineSansPERSONALUSE-Light"),
+    url("./fonts/MADEOkineSansPERSONALUSE-Light.otf") format("truetype");
+}
+@font-face {
+  font-family: "Light-Outline";
+  src: local("MADEOkineSansPERSONALUSE-LightOutline"),
+    url("./fonts/MADEOkineSansPERSONALUSE-LightOutline.otf") format("truetype");
+}
+@font-face {
+  font-family: "Regular";
+  src: local("MADEOkineSansPERSONALUSE-Regular"),
+    url("./fonts/MADEOkineSansPERSONALUSE-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "Regular-Outline";
+  src: local("MADEOkineSansPERSONALUSE-RegularOutline"),
+    url("./fonts/MADEOkineSansPERSONALUSE-RegularOutline.otf") format("truetype");
+}
+@font-face {
+  font-family: "Medium";
+  src: local("MADEOkineSansPERSONALUSE-Medium"),
+    url("./fonts/MADEOkineSansPERSONALUSE-Medium.otf") format("truetype");
+}
+@font-face {
+  font-family: "Medium-Outline";
+  src: local("MADEOkineSansPERSONALUSE-MediumOutline"),
+    url("./fonts/MADEOkineSansPERSONALUSE-MediumOutline.otf") format("truetype");
+}
+@font-face {
+  font-family: "Thin";
+  src: local("MADEOkineSansPERSONALUSE-Thin"),
+    url("./fonts/MADEOkineSansPERSONALUSE-Thin.otf") format("truetype");
+}
+
 *,
 *:before,
 *:after {
@@ -90,44 +136,33 @@ h6 {
 }
 
 .content {
-  padding: 30px;
+  padding: 0 0 030px;
   height: 100vh
 }
 
 body {
-  background: linear-gradient(94deg, #423e81, #3a3d79, #975261, #87a08a, #817aaf, #333159);
+  background: linear-gradient(45deg, #423e81, #3a3d79, #975261, #87a08a, #333159);
+  background-size: 1000% 1000%;
+	animation: gradient 25s ease infinite;
+	height: 100vh;
 
-  background-size: 3200% 3200%;
-
-  -webkit-animation: AnimationName 24s ease infinite;
-  -moz-animation: AnimationName 24s ease infinite;
-  -o-animation: AnimationName 24s ease infinite;
-  animation: AnimationName 24s ease infinite;
 
   // background-image: url("./assets/images/102.svg");
   // background-repeat: no-repeat;
   // background-size: cover;
+  // height: 100%;
 }
 
-@-webkit-keyframes AnimationName {
-  0%{background-position:29% 0%}
-  50%{background-position:72% 100%}
-  100%{background-position:29% 0%}
-}
-@-moz-keyframes AnimationName {
-  0%{background-position:29% 0%}
-  50%{background-position:72% 100%}
-  100%{background-position:29% 0%}
-}
-@-o-keyframes AnimationName {
-  0%{background-position:29% 0%}
-  50%{background-position:72% 100%}
-  100%{background-position:29% 0%}
-}
-@keyframes AnimationName {
-  0%{background-position:29% 0%}
-  50%{background-position:72% 100%}
-  100%{background-position:29% 0%}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 

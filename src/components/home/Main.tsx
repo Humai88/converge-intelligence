@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import styles from './HomeSection.module.scss';
 import main from './../../assets/images/main-bg.svg';
-import { BackgroundMain } from '../../UI-kit/BackgroundMain';
-import { Talents } from '../../UI-kit/Talents';
-import { Ways } from '../../UI-kit/Ways';
-import { Technology } from '../../UI-kit/Technology';
-import { Culture } from '../../UI-kit/Culture';
+import talent from './../../assets/images/talent-full.svg';
+import ways from './../../assets/images/ways-full.svg';
+import tech from './../../assets/images/tech-full-gr.svg';
+import culture from './../../assets/images/culture-full.svg';
+import final from './../../assets/images/final.svg';
 import ReactTextTransition from 'react-text-transition';
 import { Fade } from 'react-awesome-reveal';
 import { Parallax } from 'react-scroll-parallax';
@@ -14,34 +14,48 @@ export const Main = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const keyframes = [
-    { text: '', color: '#fff', subHeader: '', subText: '' },
     {
       text: 'talent',
       color: '#D0E6A4',
       subHeader: 'Finding the talent',
-      subText: 'We Leverage the power of highly diverse teams with the skills, backgrounds, expertise to solve complex problems.',
+      subText:
+        'We Leverage the power of highly diverse teams with the skills, backgrounds, expertise to solve complex problems.',
+      img: talent,
     },
     {
       text: 'ways of working',
       color: '#FB887B',
       subHeader: 'Finding ways of working',
-      subText: 'We Leverage the power of highly diverse teams with the skills, backgrounds, expertise to solve complex problems.',
+      subText:
+        'We Leverage the power of highly diverse teams with the skills, backgrounds, expertise to solve complex problems.',
+      img: ways,
     },
     {
       text: 'technology',
       color: '#FEDD95',
       subHeader: 'Finding technology',
-      subText: 'We Leverage the power of highly diverse teams with the skills, backgrounds, expertise to solve complex problems.',
+      subText:
+        'We Leverage the power of highly diverse teams with the skills, backgrounds, expertise to solve complex problems.',
+      img: tech,
     },
     {
       text: 'culture',
       color: '#CDABDA',
       subHeader: 'Finding culture',
-      subText: 'We Leverage the power of highly diverse teams with the skills, backgrounds, expertise to solve complex problems.',
+      subText:
+        'We Leverage the power of highly diverse teams with the skills, backgrounds, expertise to solve complex problems.',
+      img: culture,
+    },
+    {
+      text: 'final',
+      color: '#FFF',
+      subHeader: '.',
+      subText: '',
+      img: final,
     },
   ];
 
-  const intervalTime = 2000;
+  const intervalTime = 4000;
   useEffect(() => {
     if (currentIndex === keyframes.length) {
       setCurrentIndex(0);
@@ -56,10 +70,28 @@ export const Main = () => {
 
   return (
     <div className={styles.wrapper}>
-      <Parallax speed={5}>
-        <div className={styles.textWrapper}>
-          {currentIndex !== 0 ? (
-            <>
+      {currentIndex === 4 ? (
+        <div className={styles.mainHeader}>
+          <Parallax speed={-2}>
+            <img
+              style={{ width: '600px' }}
+              src={keyframes[4].img}
+              alt={keyframes[4].text}
+            />
+            <h2
+              className={styles.textFinal}
+              style={{ color: `${keyframes[4].color}` }}
+            >
+              We Leverage
+              <br /> the power of highly
+              <br /> diverse teams
+            </h2>
+          </Parallax>
+        </div>
+      ) : (
+        <>
+          <div className={styles.textWrapper}>
+            <Parallax speed={-2}>
               <h2 className={styles.text}>combining</h2>
               <div>
                 <ReactTextTransition
@@ -74,42 +106,33 @@ export const Main = () => {
                 </ReactTextTransition>
               </div>
               <h2 className={styles.text}>for innovation</h2>
+            </Parallax>
+            <Parallax speed={2}>
               <div className={styles.subText}>
                 <h3>{keyframes[currentIndex % keyframes.length].subHeader}</h3>
-                <div style={{backgroundColor: `${keyframes[currentIndex % keyframes.length].color}`}}></div>
-                <span>{keyframes[currentIndex % keyframes.length].subText}</span>
+                <div
+                  style={{
+                    backgroundColor: `${
+                      keyframes[currentIndex % keyframes.length].color
+                    }`,
+                  }}
+                ></div>
+                <span>
+                  {keyframes[currentIndex % keyframes.length].subText}
+                </span>
               </div>
-            </>
-          ) : (
-            <>
-              <div className={styles.mainHeader}>
-                <h2
-                  className={styles.text}
-                  style={{ color: `${keyframes[0].color}` }}
-                >
-                  We Leverage <br /> the power of highly
-                  <br /> diverse teams
-                </h2>
-                <Fade direction="up" duration={1400}>
-                  <span className={styles.subHeader}>
-                    skills to solve complex problems for our forward thinking
-                    partners
-                  </span>
-                </Fade>
-              </div>
-            </>
-          )}
-        </div>
+            </Parallax>
+          </div>
+        </>
+      )}
 
-        <img src={main} />
-        {/* <div className={styles.imageWrapper}>
-        <BackgroundMain />
-        <Talents />
-        <Ways />
-        <Technology />
-        <Culture />
-      </div> */}
-      </Parallax>
+      {currentIndex !== 4 && (
+        <img
+          className={styles.image}
+          src={keyframes[currentIndex % keyframes.length].img}
+          alt={keyframes[currentIndex % keyframes.length].text}
+        />
+      )}
     </div>
   );
 };

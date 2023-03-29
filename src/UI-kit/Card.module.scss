@@ -1,0 +1,26 @@
+@import "./../scss/global.scss";
+
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  max-width: 312px;
+  text-align: center;
+  padding: 1rem;
+  h4{
+    font-size: 29px;
+    font-family: "Regular";
+  }
+  span{
+    font-size: 14px;
+    font-family: "Regular";
+  }
+  p{
+    font-size: 14px;
+    font-family: "Thin";
+    margin-top: 14px;
+  }
+}

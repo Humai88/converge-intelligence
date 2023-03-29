@@ -5,8 +5,8 @@ import { Main } from './Main'
 
 export const HomeSection = () => {
   return (
-    <div>
-      {/* <Header/> */}
+    <div className={styles.content}>
+      <Header/>
       <Main/>
     </div>
   )

@@ -1,7 +1,12 @@
 @import './../../scss/global.scss';
+.content{
+  height: 100vh;
 .wrapper {
   position: relative;
 
+  h2{
+    font-family: "Regular";
+  }
   .textWrapper {
     width: 863px;
     padding-left: 64px;
@@ -9,31 +14,31 @@
   }
 
   .mainHeader {
-    text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
     h2 {
-      margin-bottom: 30px;
-    }
-    .subHeader {
-      font-size: 24px;
-      font-weight: 300;
+      font-size: 2.5rem;
+      line-height: 48px;
+      margin-top: 32px;
     }
   }
+
   .text {
     font-size: 72px;
     font-weight: 800;
     line-height: 72px;
   }
+  .textFinal{
+    font-size: 3.8rem;
+  }
   .coloredText {
     font-size: 90px;
-    font-weight: 800;
     line-height: 92px;
+    font-family: "Medium";
   }
-  img {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    right: 48px;
-  }
+
   .subText {
     width: 400px;
     text-align: right;
@@ -43,6 +48,7 @@
     h3 {
       font-size: 32px;
       font-weight: 400;
+      font-family: "Regular";
     }
     div {
       width: 100px;
@@ -56,8 +62,25 @@
       margin-top: 2rem;
       font-size: 18px;
       font-weight: 300;
+      font-family: "Thin";
     }
+  }
+  .image {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 3rem;
   }
 }
 
-// style={{borderBottom: `3px solid ${keyframes[currentIndex % keyframes.length].color}`, paddingBottom: "5px"}}
+.headerWrapper{
+  padding-left: 56px;
+  display: flex;
+  justify-content: start;
+  margin-top: 1rem;
+  .logo{
+    width: 160px
+  }
+  
+}
+}
