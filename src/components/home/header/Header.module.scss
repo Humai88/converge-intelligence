@@ -1,0 +1,11 @@
+@import './../../../scss/global.scss';
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  .logo {
+    width: 160px;
+  }
+}

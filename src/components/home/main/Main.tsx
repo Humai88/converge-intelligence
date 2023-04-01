@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import styles from './HomeSection.module.scss';
-import main from './../../assets/images/main-bg.svg';
-import talent from './../../assets/images/talent-full.svg';
-import ways from './../../assets/images/ways-full.svg';
-import tech from './../../assets/images/tech-full-gr.svg';
-import culture from './../../assets/images/culture-full.svg';
-import final from './../../assets/images/final.svg';
+import styles from './Main.module.scss';
+import talent from './../../../assets/images/talent-full.svg';
+import ways from './../../../assets/images/ways-full.svg';
+import tech from './../../../assets/images/tech-full-gr.svg';
+import culture from './../../../assets/images/culture-full.svg';
+import final from './../../../assets/images/final.svg';
 import ReactTextTransition from 'react-text-transition';
 import { Fade } from 'react-awesome-reveal';
 import { Parallax } from 'react-scroll-parallax';

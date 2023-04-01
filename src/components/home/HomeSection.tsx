@@ -1,7 +1,8 @@
 import React from 'react'
 import styles from './HomeSection.module.scss'
-import { Header } from './Header'
-import { Main } from './Main'
+import { Header } from './header/Header'
+import { Main } from './main/Main'
+
 
 export const HomeSection = () => {
   return (

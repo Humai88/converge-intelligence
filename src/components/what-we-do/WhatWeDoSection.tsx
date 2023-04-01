@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './WhatWeDoSection.module.scss';
-import { HeaderWithLines } from '../../UI-kit/HeaderWithLines';
-import { HeaderOutlined } from '../../UI-kit/HeaderOutlined';
 import { Slide } from 'react-awesome-reveal';
-import { Card } from '../../UI-kit/Card';
 import data from './../../assets/images/data.svg';
 import design from './../../assets/images/design.svg';
 import { Parallax } from 'react-scroll-parallax';
+import { HeaderWithLines } from '../../UI-kit/headers/HeaderWithLines';
+import { HeaderOutlined } from '../../UI-kit/headers/HeaderOutlined';
+import { Card } from '../../UI-kit/card/Card';
 
 export const WhatWeDoSection = () => {
   return (

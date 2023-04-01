@@ -1,0 +1,21 @@
+@import './../../scss/global.scss';
+
+.button {
+  border-radius: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 10px;
+  border: 1px solid $color-text;
+  color: $color-text;
+  background-color: transparent;
+  height: 36px;
+  p {
+    margin-top: -2px;
+  }
+  &:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+  }
+}
