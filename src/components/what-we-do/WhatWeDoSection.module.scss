@@ -1,10 +1,11 @@
 .content {
-  height: 100vh;
+  min-height: 100vh;
   margin-top: 10rem;
   .cardsWrapper {
     display: flex;
     justify-content: center;
     gap:120px;
     margin-top: 4rem;
+    margin-bottom: 5rem;
   }
 }

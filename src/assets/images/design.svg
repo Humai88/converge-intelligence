@@ -1,8 +1,11 @@
 <svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Group 1114">
-<circle id="Ellipse 1" cx="20.7139" cy="20.7139" r="20.7139" transform="matrix(1 0 0 -1 30.3057 71.6003)" stroke="#CDABDA" stroke-width="2"/>
-<circle id="Ellipse 3" cx="20.7139" cy="20.7139" r="20.7139" transform="matrix(1 0 0 -1 30.5723 42.428)" stroke="#CDABDA" stroke-width="2"/>
-<circle id="Ellipse 2" cx="20.7805" cy="20.7805" r="20.7805" transform="matrix(1 0 0 -1 1 71.6003)" stroke="#CDABDA" stroke-width="2"/>
-<circle id="Ellipse 4" cx="20.7139" cy="20.7139" r="20.7139" transform="matrix(1 0 0 -1 1.2666 42.428)" stroke="#CDABDA" stroke-width="2"/>
+<circle id="Ellipse 1" cx="20.7139" cy="20.7139" r="20.7139" transform="matrix(1 0 0 -1 30.3057 71.6003)" stroke="rgb(204,204,204)" stroke-width="1"/>
+<circle id="Ellipse 1" cx="20.7139" cy="20.7139" r="20.7139" transform="matrix(1 0 0 -1 30.3057 71.6003)" stroke="#CDABDA" stroke-width="2" stroke-dasharray="100" stroke-dashoffset="100">
+<animate attributeName="stroke-dashoffset"  begin="0s" from="90" to="0" dur="1.5s" fill="freeze" repeatCount="indefinite" />
+</circle>
+<circle id="Ellipse 3" cx="20.7139" cy="20.7139" r="20.7139" transform="matrix(1 0 0 -1 30.5723 42.428)" stroke="rgb(204,204,204)" stroke-width="1"/>
+<circle id="Ellipse 2" cx="20.7805" cy="20.7805" r="20.7805" transform="matrix(1 0 0 -1 1 71.6003)" stroke="rgb(204,204,204)" stroke-width="1"/>
+<circle id="Ellipse 4" cx="20.7139" cy="20.7139" r="20.7139" transform="matrix(1 0 0 -1 1.2666 42.428)" stroke="rgb(204,204,204)" stroke-width="1"/>
 </g>
 </svg>

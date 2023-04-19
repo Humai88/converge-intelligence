@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Main.module.scss';
-import talent from './../../../assets/images/talent-full.svg';
-import ways from './../../../assets/images/ways-full.svg';
-import tech from './../../../assets/images/tech-full-gr.svg';
-import culture from './../../../assets/images/culture-full.svg';
-import final from './../../../assets/images/final.svg';
 import ReactTextTransition from 'react-text-transition';
-import { Fade } from 'react-awesome-reveal';
-import { Parallax } from 'react-scroll-parallax';
+import { Talent } from '../graphics/Talent';
+import { Ways } from '../graphics/Ways';
+import { Tech } from '../graphics/Tech';
+import { Culture } from '../graphics/Culture';
+import { Final } from '../graphics/Final';
+import { ButtonOutlined } from '../../../UI-kit/buttons/ButtonOutlined';
 
 export const Main = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,7 +18,6 @@ export const Main = () => {
       subHeader: 'Finding the talent',
       subText:
         'We Leverage the power of highly diverse teams with the skills, backgrounds, expertise to solve complex problems.',
-      img: talent,
     },
     {
       text: 'ways of working',
@@ -27,7 +25,6 @@ export const Main = () => {
       subHeader: 'Finding ways of working',
       subText:
         'We Leverage the power of highly diverse teams with the skills, backgrounds, expertise to solve complex problems.',
-      img: ways,
     },
     {
       text: 'technology',
@@ -35,7 +32,6 @@ export const Main = () => {
       subHeader: 'Finding technology',
       subText:
         'We Leverage the power of highly diverse teams with the skills, backgrounds, expertise to solve complex problems.',
-      img: tech,
     },
     {
       text: 'culture',
@@ -43,21 +39,19 @@ export const Main = () => {
       subHeader: 'Finding culture',
       subText:
         'We Leverage the power of highly diverse teams with the skills, backgrounds, expertise to solve complex problems.',
-      img: culture,
     },
     {
       text: 'final',
       color: '#FFF',
       subHeader: '.',
       subText: '',
-      img: final,
     },
   ];
 
-  const intervalTime = 4000;
+  const intervalTime = 5500;
   useEffect(() => {
-    if (currentIndex === keyframes.length) {
-      setCurrentIndex(0);
+    if (currentIndex === keyframes.length-1) {
+      return
     }
     const interval = setInterval(() => {
       const updatedData = currentIndex + 1;
@@ -70,13 +64,11 @@ export const Main = () => {
   return (
     <div className={styles.wrapper}>
       {currentIndex === 4 ? (
-        <div className={styles.mainHeader}>
-          <Parallax speed={-2}>
-            <img
-              style={{ width: '600px' }}
-              src={keyframes[4].img}
-              alt={keyframes[4].text}
-            />
+        <div className={styles.final}>
+
+
+            <Final/>
+    
             <h2
               className={styles.textFinal}
               style={{ color: `${keyframes[4].color}` }}
@@ -85,13 +77,14 @@ export const Main = () => {
               <br /> the power of highly
               <br /> diverse teams
             </h2>
-          </Parallax>
+            <ButtonOutlined onClick={()=>{setCurrentIndex(0)}} text='Watch again'/>
         </div>
       ) : (
         <>
           <div className={styles.textWrapper}>
-            <Parallax speed={-2}>
               <h2 className={styles.text}>combining</h2>
+              <br/>
+              <br/>
               <div>
                 <ReactTextTransition
                   className={styles.coloredText}
@@ -104,9 +97,10 @@ export const Main = () => {
                   {keyframes[currentIndex % keyframes.length].text}
                 </ReactTextTransition>
               </div>
+              <br/>
+              <br/>
               <h2 className={styles.text}>for innovation</h2>
-            </Parallax>
-            <Parallax speed={2}>
+
               <div className={styles.subText}>
                 <h3>{keyframes[currentIndex % keyframes.length].subHeader}</h3>
                 <div
@@ -120,18 +114,18 @@ export const Main = () => {
                   {keyframes[currentIndex % keyframes.length].subText}
                 </span>
               </div>
-            </Parallax>
+
           </div>
         </>
       )}
 
-      {currentIndex !== 4 && (
-        <img
-          className={styles.image}
-          src={keyframes[currentIndex % keyframes.length].img}
-          alt={keyframes[currentIndex % keyframes.length].text}
-        />
-      )}
+      <div className={styles.image}>{currentIndex === 0 && <Talent />}
+      {currentIndex === 1 && <Ways />}
+      {currentIndex === 2 && <Tech />}
+      {currentIndex === 3 && <Culture />}
+      </div>
+      
     </div>
   );
 };
+

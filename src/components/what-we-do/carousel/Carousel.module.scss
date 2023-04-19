@@ -1,0 +1,34 @@
+@import './../../../scss/global.scss';
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  padding: 2rem;
+
+  .slideTrack {
+    position: absolute;
+    left: 0;
+
+    display: flex;
+    width: 238%;
+    animation: marquee 28s linear infinite;
+  }
+  .items {
+    display: flex;
+    width: 50%;
+  }
+  .item {
+    padding: 1rem;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -119%;
+  }
+}

@@ -7,6 +7,7 @@ import { Parallax } from 'react-scroll-parallax';
 import { HeaderWithLines } from '../../UI-kit/headers/HeaderWithLines';
 import { HeaderOutlined } from '../../UI-kit/headers/HeaderOutlined';
 import { Card } from '../../UI-kit/card/Card';
+import { Carousel } from './carousel/Carousel';
 
 export const WhatWeDoSection = () => {
   return (
@@ -18,7 +19,7 @@ export const WhatWeDoSection = () => {
         <HeaderOutlined text="we do" />
       </Slide>
       <div className={styles.cardsWrapper}>
-        <Parallax speed={5}>
+        <Parallax speed={-5}>
         <Card
           img={data}
           header="Data Engineering"
@@ -26,7 +27,7 @@ export const WhatWeDoSection = () => {
           description="We embed data and machine learning into the very fabric of what we build."
         />
         </Parallax>
-        <Parallax speed={-5}>
+        <Parallax speed={5}>
             <Card
           img={design}
           header="Design"
@@ -34,7 +35,7 @@ export const WhatWeDoSection = () => {
           description="We build digital experiences that are personalised and natural; like an extension."
         />
          </Parallax>
-          <Parallax speed={5}>
+          <Parallax speed={-5}>
             <Card
           img={data}
           header="Data Engineering"
@@ -43,6 +44,10 @@ export const WhatWeDoSection = () => {
         />
         </Parallax>
       </div>
+      <Slide direction="down">
+      <HeaderOutlined text="we use" />
+      </Slide>
+      <Carousel/>
     </div>
   );
 };
