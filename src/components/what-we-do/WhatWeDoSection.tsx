@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './WhatWeDoSection.module.scss';
-import { Slide } from 'react-awesome-reveal';
 import data from './../../assets/images/data.svg';
 import design from './../../assets/images/design.svg';
 import { Parallax } from 'react-scroll-parallax';
@@ -12,12 +11,8 @@ import { Carousel } from './carousel/Carousel';
 export const WhatWeDoSection = () => {
   return (
     <div className={styles.content}>
-      <Slide direction="up">
         <HeaderWithLines text="what" />
-      </Slide>
-      <Slide direction="down">
         <HeaderOutlined text="we do" />
-      </Slide>
       <div className={styles.cardsWrapper}>
         <Parallax speed={-5}>
         <Card
@@ -44,9 +39,7 @@ export const WhatWeDoSection = () => {
         />
         </Parallax>
       </div>
-      <Slide direction="down">
       <HeaderOutlined text="we use" />
-      </Slide>
       <Carousel/>
     </div>
   );

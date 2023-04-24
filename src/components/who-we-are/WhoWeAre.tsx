@@ -1,9 +1,8 @@
 import React from 'react'
 
-const OurTeamSection = () => {
+export const WhoWeAre = () => {
   return (
     <div>OurTeamSection</div>
   )
 }
 
-export default OurTeamSection

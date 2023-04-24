@@ -65,10 +65,7 @@ export const Main = () => {
     <div className={styles.wrapper}>
       {currentIndex === 4 ? (
         <div className={styles.final}>
-
-
             <Final/>
-    
             <h2
               className={styles.textFinal}
               style={{ color: `${keyframes[4].color}` }}

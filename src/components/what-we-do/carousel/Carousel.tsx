@@ -16,14 +16,14 @@ const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
 
 export const Carousel = () => {
   return (
-    <Parallax speed={5}>
+    <Parallax speed={-5}>
     <div className={styles.carousel}>
       <div className={styles.slideTrack}>
         <div className={styles.items}>
           {images.map(img => {
             return (
-              <div className={styles.item}>
-                <CarouselItem key={img} img={img} />
+              <div key={img} className={styles.item}>
+                <CarouselItem img={img} />
               </div>
             );
           })}
@@ -31,8 +31,8 @@ export const Carousel = () => {
         <div className={styles.items}>
           {images.map(img => {
             return (
-              <div className={styles.item}>
-                <CarouselItem key={img} img={img} />
+              <div key={img} className={styles.item}>
+                <CarouselItem  img={img} />
               </div>
             );
           })}

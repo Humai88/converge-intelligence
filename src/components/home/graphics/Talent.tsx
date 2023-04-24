@@ -4,8 +4,8 @@ export const Talent = () => {
   return (
     <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="878"
-    height="879"
+    width="800"
+    height="800"
     fill="none"
     viewBox="0 0 878 879"
   >
