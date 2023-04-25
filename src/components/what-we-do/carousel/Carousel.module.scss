@@ -10,14 +10,13 @@
   .slideTrack {
     position: absolute;
     left: 0;
-
     display: flex;
     width: 238%;
-    animation: marquee 28s linear infinite;
+    animation: marquee 30s linear infinite;
   }
   .items {
     display: flex;
-    width: 50%;
+    width: 100%;
   }
   .item {
     padding: 1rem;

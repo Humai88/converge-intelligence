@@ -14,7 +14,7 @@ export const Main = () => {
   const keyframes = [
     {
       text: 'talent',
-      color: '#D0E6A4',
+      color: '#61E7CD',
       subHeader: 'Finding the talent',
       subText:
         'We Leverage the power of highly diverse teams with the skills, backgrounds, expertise to solve complex problems.',
@@ -28,14 +28,14 @@ export const Main = () => {
     },
     {
       text: 'technology',
-      color: '#FEDD95',
+      color: '#FEC977',
       subHeader: 'Finding technology',
       subText:
         'We Leverage the power of highly diverse teams with the skills, backgrounds, expertise to solve complex problems.',
     },
     {
       text: 'culture',
-      color: '#CDABDA',
+      color: '#A987BC',
       subHeader: 'Finding culture',
       subText:
         'We Leverage the power of highly diverse teams with the skills, backgrounds, expertise to solve complex problems.',
@@ -120,7 +120,10 @@ export const Main = () => {
       {currentIndex === 1 && <Ways />}
       {currentIndex === 2 && <Tech />}
       {currentIndex === 3 && <Culture />}
-      </div>
+      </div> 
+
+{/* <div className={styles.image}><Culture />
+    </div>  */}
       
     </div>
   );

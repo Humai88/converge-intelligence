@@ -1,0 +1,31 @@
+@import './../../../scss/global.scss';
+.container{
+  .imageWrapper{
+    position: relative;
+width: 280px;
+height: 280px;
+img {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+    .imgOutline{
+      position: absolute;
+      z-index: -1;
+      height: 250px;
+      width: 250px;
+      border: 2px solid $color-text;
+      border-radius: 15px;
+      left: 0px;
+      top: 0px;
+    }
+  }
+ button{
+  z-index: 1;
+ }
+}

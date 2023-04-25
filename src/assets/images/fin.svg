@@ -1,15 +1,7 @@
-import React from 'react'
-import { motion } from "framer-motion"
-
-export const Final = () => {
-  return (
-    <motion.div initial={{ opacity: 0, scale: 0.7 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.5 }}>
- <svg width="600" height="600" viewBox="0 0 4250 4250" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="4250" height="4250" viewBox="0 0 4250 4250" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="tech-30 1" clip-path="url(#clip0_4_196)">
 <g id="Clip path group">
-<mask id="mask0_4_196" maskUnits="userSpaceOnUse" x="0" y="0" width="4250" height="4250">
+<mask id="mask0_4_196" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="4250" height="4250">
 <g id="clip0_2_113">
 <path id="Vector" d="M4250 0H0V4250H4250V0Z" fill="white"/>
 </g>
@@ -17,7 +9,7 @@ export const Final = () => {
 <g mask="url(#mask0_4_196)">
 <g id="Group">
 <g id="Mask group">
-<mask id="mask1_4_196" maskUnits="userSpaceOnUse" x="0" y="0" width="4250" height="4250">
+<mask id="mask1_4_196" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="4250" height="4250">
 <g id="Group_2">
 <path id="Vector_2" d="M4249.72 2124.86L2124.86 0L0.00415039 2124.86L2124.86 4249.71L4249.72 2124.86Z" fill="white"/>
 </g>
@@ -68,7 +60,7 @@ export const Final = () => {
 <path id="Vector_41" d="M2127.85 2121.32C2420.74 2414.21 2895.62 2414.21 3188.51 2121.32C3481.4 1828.43 3481.4 1353.55 3188.51 1060.66C2895.62 767.767 2420.74 767.767 2127.85 1060.66C1834.96 1353.55 1834.96 1828.43 2127.85 2121.32Z" stroke="#FB887B" stroke-opacity="0.3" stroke-width="15"/>
 <path id="Vector_42" d="M1067.2 3181.98C1360.09 3474.87 1834.97 3474.87 2127.86 3181.98C2420.75 2889.09 2420.75 2414.21 2127.86 2121.32C1834.97 1828.43 1360.09 1828.43 1067.2 2121.32C774.307 2414.21 774.307 2889.09 1067.2 3181.98Z" stroke="#FB887B" stroke-opacity="0.3" stroke-width="15"/>
 <g id="Clip path group_2">
-<mask id="mask2_4_196"  maskUnits="userSpaceOnUse" x="0" y="0" width="4250" height="4250">
+<mask id="mask2_4_196" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="4250" height="4250">
 <g id="clip1_2_113">
 <path id="Vector_43" d="M4250 0H0V4250H4250V0Z" fill="white"/>
 </g>
@@ -115,7 +107,3 @@ export const Final = () => {
 </clipPath>
 </defs>
 </svg>
-
-  </motion.div>
-  )
-}
