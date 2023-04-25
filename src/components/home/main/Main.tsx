@@ -122,9 +122,6 @@ export const Main = () => {
       {currentIndex === 3 && <Culture />}
       </div> 
 
-{/* <div className={styles.image}><Culture />
-    </div>  */}
-      
     </div>
   );
 };
