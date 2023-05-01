@@ -2,14 +2,14 @@ import React from 'react';
 import styles from './Card.module.scss';
 
 export const Card: React.FC<CardProps> = ({
-  img,
+  children,
   header,
   subHeader,
   description,
 }) => {
   return (
     <div className={styles.wrapper}>
-      <img src={img} alt={img} />
+      {children}
       <h4>{header}</h4>
       <span>{subHeader}</span>
       <p>{description}</p>
@@ -18,7 +18,7 @@ export const Card: React.FC<CardProps> = ({
 };
 
 type CardProps = {
-  img: string;
+  children: React.ReactNode | React.ReactNode[];
   header: string;
   subHeader: string;
   description: string;

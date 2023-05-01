@@ -1,9 +1,15 @@
 import React from 'react';
-import videoBg from './../../../assets/video/vide0-bg-2.mp4';
+import videoBg from './../../../assets/video/bg-slow.mp4';
 import styles from './Main.module.scss';
 
 export const Video = () => {
   return (
-    <video className={styles.video} src={videoBg} autoPlay loop muted></video>
+<div className={styles.videoWrapper}>
+<div className={styles.parallaxVideo}>
+      <video autoPlay loop muted>
+        <source src={videoBg} type="video/mp4" />
+      </video>
+    </div>
+</div>
   );
 };

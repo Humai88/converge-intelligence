@@ -4,4 +4,17 @@
 .headers{
   margin-top: 11rem;
 }
+.infoSection{
+  display: flex;
+  margin-top: 3rem;
+  
+  .videoWrapper{
+    width: 50%;
+
+  }
+  .photosWrapper{
+    width: 50%;
+    padding: 0 2rem;
+  }
+}
 }

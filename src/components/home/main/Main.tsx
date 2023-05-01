@@ -1,52 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import styles from './Main.module.scss';
 import ReactTextTransition from 'react-text-transition';
-import { Talent } from '../graphics/Talent';
-import { Ways } from '../graphics/Ways';
-import { Tech } from '../graphics/Tech';
-import { Culture } from '../graphics/Culture';
-import { Final } from '../graphics/Final';
+import { Talent } from '../../../UI-kit/graphics/Talent';
+import { Ways } from '../../../UI-kit/graphics/Ways';
+import { Tech } from '../../../UI-kit/graphics/Tech';
+import { Culture } from '../../../UI-kit/graphics/Culture';
+import { Final } from '../../../UI-kit/graphics/Final';
 import { ButtonOutlined } from '../../../UI-kit/buttons/ButtonOutlined';
+import { keyframes } from '../../../static-data/homeData';
 
 export const Main = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  const keyframes = [
-    {
-      text: 'talent',
-      color: '#61E7CD',
-      subHeader: 'Finding the talent',
-      subText:
-        'We Leverage the power of highly diverse teams with the skills, backgrounds, expertise to solve complex problems.',
-    },
-    {
-      text: 'ways of working',
-      color: '#FB887B',
-      subHeader: 'Finding ways of working',
-      subText:
-        'We Leverage the power of highly diverse teams with the skills, backgrounds, expertise to solve complex problems.',
-    },
-    {
-      text: 'technology',
-      color: '#FEC977',
-      subHeader: 'Finding technology',
-      subText:
-        'We Leverage the power of highly diverse teams with the skills, backgrounds, expertise to solve complex problems.',
-    },
-    {
-      text: 'culture',
-      color: '#A987BC',
-      subHeader: 'Finding culture',
-      subText:
-        'We Leverage the power of highly diverse teams with the skills, backgrounds, expertise to solve complex problems.',
-    },
-    {
-      text: 'final',
-      color: '#FFF',
-      subHeader: '.',
-      subText: '',
-    },
-  ];
 
   const intervalTime = 5500;
   useEffect(() => {

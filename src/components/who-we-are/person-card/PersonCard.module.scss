@@ -1,22 +1,23 @@
 @import './../../../scss/global.scss';
-.container{
-  .imageWrapper{
+.container {
+  .imageWrapper {
     position: relative;
-width: 280px;
-height: 280px;
-img {
-  height: 250px;
-  width: 250px;
-  position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-    .imgOutline{
+    width: 280px;
+    height: 280px;
+    img {
+      height: 250px;
+      width: 250px;
       position: absolute;
-      z-index: -1;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+    }
+    .imgOutline {
+      position: absolute;
+      z-index: 1;
       height: 250px;
       width: 250px;
       border: 2px solid $color-text;
@@ -25,7 +26,40 @@ img {
       top: 0px;
     }
   }
- button{
-  z-index: 1;
- }
+  .modal {
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    background-color: #00000065;
+    top: 0;
+    left: 0;
+    display: flex;
+    overflow: hidden;
+    z-index: 4;
+    .sidebar {
+      width: 50%;
+      background-color: $color-dark-purple;
+      height: calc(100vh - 2rem);
+      border-radius: 25px;
+      margin-top: 1rem;
+      padding: 4rem;
+      h2{
+        font-size: 3rem;
+      }
+      .main{
+        margin-top: 5rem;
+        display: flex;
+        div{
+          width: 50%;
+          font-size: 1.7rem;
+          font-family: "Light";
+        }
+      }
+    }
+    .sidebarBtn{
+      position: relative;
+      margin-top: 2rem;
+      margin-left: 2rem;
+    }
+  }
 }
