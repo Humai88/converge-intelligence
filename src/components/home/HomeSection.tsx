@@ -11,7 +11,7 @@ export const HomeSection = () => {
   const nodeRef = useRef(null);
 
   return (
-    <div className={styles.content}>
+    <div id="home" className={styles.content}>
       <CSSTransition
         in={showMenu}
         nodeRef={nodeRef}

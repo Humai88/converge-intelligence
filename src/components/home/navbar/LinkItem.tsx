@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from "./Link.module.scss"
+import styles from "./LinkItem.module.scss"
 
-export const Link: React.FC<LinkProps> = ({text}) => {
+export const LinkItem: React.FC<LinkProps> = ({text}) => {
   return (
     <li className={styles.link}>{text}</li>
   )

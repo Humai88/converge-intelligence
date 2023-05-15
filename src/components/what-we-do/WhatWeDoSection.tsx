@@ -10,11 +10,11 @@ import { Design } from '../../UI-kit/graphics/Design';
 
 export const WhatWeDoSection = () => {
   return (
-    <div className={styles.content}>
+    <div id="whatWeDo" className={styles.content}>
       <HeaderWithLines text="what" />
       <HeaderOutlined text="we do" />
       <div className={styles.cardsWrapper}>
-        <Parallax speed={-5}>
+        <Parallax speed={-7}>
           <Card
             header="Data Engineering"
             subHeader="CONTEXT & PREDICTION"
@@ -32,7 +32,7 @@ export const WhatWeDoSection = () => {
             <Design />
           </Card>
         </Parallax>
-        <Parallax speed={-5}>
+        <Parallax speed={-7}>
           <Card
             header="Data Engineering"
             subHeader="CONTEXT & PREDICTION"

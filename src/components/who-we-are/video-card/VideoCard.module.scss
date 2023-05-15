@@ -1,0 +1,36 @@
+@import './../../../scss/global.scss';
+.container {
+position: relative;
+  .videoWrapper {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    img {
+      height: 420px;
+      width: 420px;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+    }
+    .videoOutline {
+      position: absolute;
+      z-index: 1;
+      height: 420px;
+      width: 420px;
+      border: 2px solid $color-text;
+      border-radius: 15px;
+      left: 0px;
+      top: 0px;
+    }
+    .mainBtn{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+}

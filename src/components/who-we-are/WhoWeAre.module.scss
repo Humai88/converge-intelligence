@@ -1,20 +1,37 @@
 @import './../../scss/global.scss';
 .content {
   height: 100vh;
-.headers{
-  margin-top: 11rem;
-}
-.infoSection{
-  display: flex;
-  margin-top: 3rem;
-  
-  .videoWrapper{
-    width: 50%;
-
+  .headers {
+    margin-top: 11rem;
   }
-  .photosWrapper{
-    width: 50%;
-    padding: 0 2rem;
+  .infoSection {
+    display: flex;
+    margin-top: 4rem;
+    height: 60vh;
+    padding: 1rem 0;
+    .videoWrapper {
+      width: 40%;
+      display: flex;
+      margin-left: 250px;
+      align-items: center;
+    }
+    .photosWrapper {
+      width: 60%;
+      position: relative;
+      .person1 {
+        position: absolute;
+        top: 0;
+      }
+      .person2 {
+        position: absolute;
+        top: 100px;
+        right: 250px
+      }
+      .person3 {
+        position: absolute;
+        top: 350px;
+        left: 100px;
+      }
+    }
   }
-}
 }

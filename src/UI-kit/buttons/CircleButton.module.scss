@@ -1,0 +1,25 @@
+@import './../../scss/global.scss';
+.button {
+  z-index: 3;
+  position: relative;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  background-color: $color-text;
+  outline: none;
+  border: none;
+  &:hover{
+    animation: pulse 1.5s infinite;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(var(--scale, 1));
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: scale(var(--scale, 1.33));
+  }
+}

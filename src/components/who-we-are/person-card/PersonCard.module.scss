@@ -1,5 +1,6 @@
 @import './../../../scss/global.scss';
 .container {
+  cursor: pointer;
   .imageWrapper {
     position: relative;
     width: 280px;
@@ -24,6 +25,11 @@
       border-radius: 15px;
       left: 0px;
       top: 0px;
+    }
+    .mainBtn{
+      position: absolute;
+      bottom: 0;
+      right: 0;
     }
   }
   .modal {

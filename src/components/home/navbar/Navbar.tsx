@@ -3,21 +3,15 @@ import styles from './Navbar.module.scss';
 import { Header } from '../header/Header';
 import { FiX } from 'react-icons/fi';
 import { Fade, Slide } from 'react-awesome-reveal';
-import { Link } from './Link';
+import { LinkItem } from './LinkItem';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 export const Navbar: React.FC<NavbarProps> = ({
   innerRef,
   onClick,
   ...restProps
 }) => {
-  const links = [
-    'what we do',
-    'who we are',
-    'how we do',
-    'where we are',
-    'smart calculation',
-    'contact us',
-  ];
+
   return (
     <div ref={innerRef} className={styles.wrapper} {...restProps}>
       <Fade direction="up" delay={300}>
@@ -25,9 +19,72 @@ export const Navbar: React.FC<NavbarProps> = ({
       </Fade>
       <Slide direction="up" delay={300}>
         <ul>
-          {links.map(link => {
-            return <Link key={link.replace(/ .*/, '')} text={link} />;
-          })}
+          <Link
+            onClick={onClick}
+            activeClass="active"
+            to="whatWeDo"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1100}
+          >
+            <LinkItem text="what we do" />
+          </Link>
+          <Link
+            onClick={onClick}
+            activeClass="active"
+            to="whoWeAre"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1100}
+          >
+            <LinkItem text="who we are" />
+          </Link>
+          <Link
+            onClick={onClick}
+            activeClass="active"
+            to="howWeDo"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1100}
+          >
+            <LinkItem text="how we do" />
+          </Link>
+          <Link
+            onClick={onClick}
+            activeClass="active"
+            to="whereWeAre"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1100}
+          >
+            <LinkItem text="where we are" />
+          </Link>
+          <Link
+            onClick={onClick}
+            activeClass="active"
+            to="smartCalculation"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1100}
+          >
+            <LinkItem text="smart calculation" />
+          </Link>
+          <Link
+            onClick={onClick}
+            activeClass="active"
+            to="contactUs"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={1100}
+          >
+            <LinkItem text="contact us" />
+          </Link>
         </ul>
       </Slide>
     </div>
