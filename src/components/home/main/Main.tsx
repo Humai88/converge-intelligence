@@ -14,8 +14,8 @@ export const Main = () => {
 
   const intervalTime = 5500;
   useEffect(() => {
-    if (currentIndex === keyframes.length-1) {
-      return
+    if (currentIndex === keyframes.length - 1) {
+      return;
     }
     const interval = setInterval(() => {
       const updatedData = currentIndex + 1;
@@ -29,64 +29,64 @@ export const Main = () => {
     <div className={styles.wrapper}>
       {currentIndex === 4 ? (
         <div className={styles.final}>
-            <Final/>
-            <h2
-              className={styles.textFinal}
-              style={{ color: `${keyframes[4].color}` }}
-            >
-              We Leverage
-              <br /> the power of highly
-              <br /> diverse teams
-            </h2>
-            <ButtonOutlined onClick={()=>{setCurrentIndex(0)}} text='Watch again'/>
+          <Final />
+          <h2
+            className={styles.textFinal}
+            style={{ color: `${keyframes[4].color}` }}
+          >
+            Converging innovation,
+            <br /> Supporting cost reduction,
+            <br /> Providing flexibility
+            <br /> For exceptional solutions that scale.
+          </h2>
+          <ButtonOutlined
+            onClick={() => {
+              setCurrentIndex(0);
+            }}
+            text="Watch again"
+          />
         </div>
       ) : (
         <>
           <div className={styles.textWrapper}>
-              <h2 className={styles.text}>combining</h2>
-              <br/>
-              <br/>
-              <div>
-                <ReactTextTransition
-                  className={styles.coloredText}
-                  style={{
-                    color: `${
-                      keyframes[currentIndex % keyframes.length].color
-                    }`,
-                  }}
-                >
-                  {keyframes[currentIndex % keyframes.length].text}
-                </ReactTextTransition>
-              </div>
-              <br/>
-              <br/>
-              <h2 className={styles.text}>for innovation</h2>
+            <h2 className={styles.text}>combining</h2>
+            <br />
+            <br />
+            <div>
+              <ReactTextTransition
+                className={styles.coloredText}
+                style={{
+                  color: `${keyframes[currentIndex % keyframes.length].color}`,
+                }}
+              >
+                {keyframes[currentIndex % keyframes.length].text}
+              </ReactTextTransition>
+            </div>
+            <br />
+            <br />
+            <h2 className={styles.text}>for innovation</h2>
 
-              <div className={styles.subText}>
-                <h3>{keyframes[currentIndex % keyframes.length].subHeader}</h3>
-                <div
-                  style={{
-                    backgroundColor: `${
-                      keyframes[currentIndex % keyframes.length].color
-                    }`,
-                  }}
-                ></div>
-                <span>
-                  {keyframes[currentIndex % keyframes.length].subText}
-                </span>
-              </div>
-
+            <div className={styles.subText}>
+              <h3>{keyframes[currentIndex % keyframes.length].subHeader}</h3>
+              <div
+                style={{
+                  backgroundColor: `${
+                    keyframes[currentIndex % keyframes.length].color
+                  }`,
+                }}
+              ></div>
+              <span>{keyframes[currentIndex % keyframes.length].subText}</span>
+            </div>
           </div>
         </>
       )}
 
-      <div className={styles.image}>{currentIndex === 0 && <Talent />}
-      {currentIndex === 1 && <Ways />}
-      {currentIndex === 2 && <Tech />}
-      {currentIndex === 3 && <Culture />}
-      </div> 
-
+      <div className={styles.image}>
+        {currentIndex === 0 && <Talent />}
+        {currentIndex === 1 && <Ways />}
+        {currentIndex === 2 && <Tech />}
+        {currentIndex === 3 && <Culture />}
+      </div>
     </div>
   );
 };
-
