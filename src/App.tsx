@@ -9,7 +9,7 @@ import { WhoWeAre } from './components/who-we-are/WhoWeAre';
 function App() {
   return (
     <ParallaxProvider>
-      {/* <Video /> */}
+      <Video />
    
       <div className={styles.content}>
         <HomeSection />
