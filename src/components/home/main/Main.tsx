@@ -8,11 +8,12 @@ import { Culture } from '../../../UI-kit/graphics/Culture';
 import { Final } from '../../../UI-kit/graphics/Final';
 import { ButtonOutlined } from '../../../UI-kit/buttons/ButtonOutlined';
 import { keyframes } from '../../../static-data/homeData';
+import { Slide} from 'react-awesome-reveal';
 
 export const Main = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const intervalTime = 5500;
+  const intervalTime = 4100;
   useEffect(() => {
     if (currentIndex === keyframes.length - 1) {
       return;
@@ -82,7 +83,8 @@ export const Main = () => {
       )}
 
       <div className={styles.image}>
-        {currentIndex === 0 && <Talent />}
+        {/* {currentIndex === 0 && <Slide direction="right" duration={1300}><Talent /> </Slide> } */}
+        {currentIndex === 0 && <Talent /> }
         {currentIndex === 1 && <Ways />}
         {currentIndex === 2 && <Tech />}
         {currentIndex === 3 && <Culture />}

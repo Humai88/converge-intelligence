@@ -16,7 +16,14 @@ $delay: 0.5;
   }
 }
 
-
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
 .flipToSquare {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
