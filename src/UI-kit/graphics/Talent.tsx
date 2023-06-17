@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+import "./Style.scss"
 
 export const Talent = () => {
   return (
-    <svg width="800" height="800" viewBox="0 0 4250 4250" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div className="svg-wrapper">
+    <svg viewBox="0 0 4250 4250" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="Clip path group">
     <mask id="mask0_1_42" maskUnits="userSpaceOnUse" x="0" y="0" width="4250" height="4250">
     <g id="clip0_761_2069">
@@ -202,6 +204,6 @@ export const Talent = () => {
     </g>
     </g>
     </svg>
-
+    </div>
   )
 }

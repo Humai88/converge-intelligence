@@ -6,7 +6,11 @@
   padding: 2rem 2rem 0 2rem;
   align-items: center;
   position: relative;
+  @include devices(mobile) {
+    padding: 2rem 1rem 0 1rem;
+  }
   .logo {
     width: 160px;
   }
+ 
 }

@@ -3,10 +3,10 @@ import { motion } from "framer-motion"
 
 export const Final = () => {
   return (
-    <motion.div initial={{ opacity: 0, scale: 0.7 }}
+    <motion.div className="svg-final-wrapper" initial={{ opacity: 0, scale: 0.7 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{ duration: 0.5 }}>
- <svg width="600" height="600" viewBox="0 0 4250 4250" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <svg viewBox="0 0 4250 4250" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="tech-30 1" clipPath="url(#clip0_4_196)">
 <g id="Clip path group">
 <mask id="mask0_4_196" maskUnits="userSpaceOnUse" x="0" y="0" width="4250" height="4250">

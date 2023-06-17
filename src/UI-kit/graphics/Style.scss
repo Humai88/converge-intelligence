@@ -1,6 +1,7 @@
+@import './../../scss/global.scss';
+
 #ellipse-purple {
   animation: spin 30s linear infinite;
-  
   transform-origin: center;
 }
 @keyframes spin {
@@ -33,5 +34,24 @@
   }
   100% {
     stroke-dashoffset: 160;
+  }
+}
+.svg-wrapper{
+  width: 800px;
+  height: 800px;
+  @include devices(mobile) {
+    width: 350px;
+    height: 350px; 
+    margin-top: 2rem;
+  }
+}
+
+.svg-final-wrapper{
+  width: 600px;
+  height: 600px; 
+  @include devices(mobile) {
+    width: 350px;
+    height: 350px; 
+    margin-top: 1rem;
   }
 }

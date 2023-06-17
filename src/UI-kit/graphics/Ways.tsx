@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+import "./Style.scss"
 
 export const Ways = () => {
   return (
-    <svg width="800" height="800" viewBox="0 0 4250 4250" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div className="svg-wrapper">
+    <svg viewBox="0 0 4250 4250" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="talent-30 1">
     <g id="Mask group">
     <mask id="mask0_1_58" maskUnits="userSpaceOnUse" x="0" y="0" width="4250" height="4250">
@@ -207,5 +209,6 @@ export const Ways = () => {
     </g>
     </g>
     </svg>
+    </div>
   )
 }

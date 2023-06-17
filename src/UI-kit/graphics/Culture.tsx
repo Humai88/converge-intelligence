@@ -3,7 +3,8 @@ import "./Style.scss"
 
 export const Culture = () => {
   return (
-    <svg width="800" height="800" viewBox="0 0 4250 4250" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div className="svg-wrapper">
+    <svg viewBox="0 0 4250 4250" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="tech-30 1" clipPath="url(#clip0_4_196)">
     <g id="Clip path group">
     <mask id="mask0_4_196"  maskUnits="userSpaceOnUse" x="0" y="0" width="4250" height="4250">
@@ -201,6 +202,6 @@ export const Culture = () => {
     </clipPath>
     </defs>
     </svg>
-    
+    </div>
   )
 }

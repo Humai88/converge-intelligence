@@ -1,8 +1,10 @@
-import React from 'react'
+import React from 'react';
+import "./Style.scss"
 
 export const Tech = () => {
   return (
-<svg width="800" height="800" viewBox="0 0 4250 4250" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div className="svg-wrapper">
+<svg viewBox="0 0 4250 4250" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="ways-30 1" clipPath="url(#clip0_2_113)">
 <g id="talent-30 1">
 <g id="Mask group">
@@ -419,7 +421,7 @@ export const Tech = () => {
 </clipPath>
 </defs>
 </svg>
-
+</div>
     
   )
 }

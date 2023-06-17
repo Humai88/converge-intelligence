@@ -49,46 +49,51 @@ export const Main = () => {
         </div>
       ) : (
         <>
-          <div className={styles.textWrapper}>
-            <h2 className={styles.text}>combining</h2>
-            <br />
-            <br />
-            <div>
-              <ReactTextTransition
-                className={styles.coloredText}
-                style={{
-                  color: `${keyframes[currentIndex % keyframes.length].color}`,
-                }}
-              >
-                {keyframes[currentIndex % keyframes.length].text}
-              </ReactTextTransition>
-            </div>
-            <br />
-            <br />
-            <h2 className={styles.text}>for innovation</h2>
+          <div className={styles.mainWrapper}>
+            <div className={styles.textWrapper}>
+              <h2 className={styles.text}>combining</h2>
+              <br />
+              <br />
+              <div>
+                <ReactTextTransition
+                  className={styles.coloredText}
+                  style={{
+                    color: `${
+                      keyframes[currentIndex % keyframes.length].color
+                    }`,
+                  }}
+                >
+                  {keyframes[currentIndex % keyframes.length].text}
+                </ReactTextTransition>
+              </div>
+              <br />
+              <br />
+              <h2 className={styles.text}>for innovation</h2>
 
-            <div className={styles.subText}>
-              <h3>{keyframes[currentIndex % keyframes.length].subHeader}</h3>
-              <div
-                style={{
-                  backgroundColor: `${
-                    keyframes[currentIndex % keyframes.length].color
-                  }`,
-                }}
-              ></div>
-              <span>{keyframes[currentIndex % keyframes.length].subText}</span>
+              <div className={styles.subText}>
+                <h3>{keyframes[currentIndex % keyframes.length].subHeader}</h3>
+                <div
+                  style={{
+                    backgroundColor: `${
+                      keyframes[currentIndex % keyframes.length].color
+                    }`,
+                  }}
+                ></div>
+                <span>
+                  {keyframes[currentIndex % keyframes.length].subText}
+                </span>
+              </div>
+            </div>
+            <div className={styles.image}>
+              {/* {currentIndex === 0 && <Slide direction="right" duration={1300}><Talent /> </Slide> } */}
+              {currentIndex === 0 && <Talent />}
+              {currentIndex === 1 && <Ways />}
+              {currentIndex === 2 && <Tech />}
+              {currentIndex === 3 && <Culture />}
             </div>
           </div>
         </>
       )}
-
-      <div className={styles.image}>
-        {/* {currentIndex === 0 && <Slide direction="right" duration={1300}><Talent /> </Slide> } */}
-        {currentIndex === 0 && <Talent /> }
-        {currentIndex === 1 && <Ways />}
-        {currentIndex === 2 && <Tech />}
-        {currentIndex === 3 && <Culture />}
-      </div>
     </div>
   );
 };
