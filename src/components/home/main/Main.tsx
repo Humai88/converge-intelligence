@@ -8,7 +8,7 @@ import { Culture } from '../../../UI-kit/graphics/Culture';
 import { Final } from '../../../UI-kit/graphics/Final';
 import { ButtonOutlined } from '../../../UI-kit/buttons/ButtonOutlined';
 import { keyframes } from '../../../static-data/homeData';
-import { Slide} from 'react-awesome-reveal';
+import { Slide } from 'react-awesome-reveal';
 
 export const Main = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

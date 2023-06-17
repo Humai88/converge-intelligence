@@ -1,13 +1,10 @@
 @import './../../scss/global.scss';
 .content {
-  height: 100vh;
-  .headers {
-    margin-top: 8rem;
-  }
+  @include content;
   .infoSection {
     display: flex;
     margin-top: 4rem;
-    height: 60vh;
+    height: 700px;
     padding: 1rem 0;
     .videoWrapper {
       width: 40%;
@@ -32,6 +29,21 @@
         top: 350px;
         left: 100px;
       }
+    }
+  }
+  .bottomSection{
+    text-align: center;
+    margin-top: 2rem;
+    .bottomHeader{
+      font-size: 32px;
+      font-family: "Medium";
+
+    }
+    .bottomText {
+      font-size: 18px;
+      font-family: "Light";
+      margin-top: 1rem;
+
     }
   }
 }

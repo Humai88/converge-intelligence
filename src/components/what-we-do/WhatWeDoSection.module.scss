@@ -1,6 +1,6 @@
+@import './../../scss/global.scss';
 .content {
-  min-height: 100vh;
-  margin-top: 9rem;
+  @include content;
   .cardsWrapper {
     display: flex;
     justify-content: center;

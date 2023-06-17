@@ -4,8 +4,10 @@ import { HomeSection } from './components/home/HomeSection';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { WhatWeDoSection } from './components/what-we-do/WhatWeDoSection';
 import { Video } from './components/home/main/Video';
-import { WhoWeAre } from './components/who-we-are/WhoWeAre';
+
 import { Loader } from './UI-kit/loader/Loader';
+import { WhereWeDevelopSection } from './components/where-we-develop/WhereWeDevelopSection';
+import { WhoWeAreSection } from './components/who-we-are/WhoWeAreSection';
 
 function App() {
   const [loader, setLoader] = useState(true);
@@ -24,7 +26,8 @@ function App() {
         <div className={styles.content}>
           <HomeSection />
           <WhatWeDoSection />
-          <WhoWeAre />
+          <WhoWeAreSection />
+          <WhereWeDevelopSection />
         </div>
       )}
     </ParallaxProvider>
