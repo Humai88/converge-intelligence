@@ -11,38 +11,57 @@ import { Design } from '../../UI-kit/graphics/Design';
 export const WhatWeDoSection = () => {
   return (
     <div id="whatWeDo" className={styles.content}>
-      <HeaderWithLines text="what" />
-      <HeaderOutlined text="we do" />
+      <div className={styles.headers}>
+        <HeaderWithLines text="what" />
+        <HeaderOutlined text="we do" />
+      </div>
       <div className={styles.cardsWrapper}>
         <Parallax speed={-7}>
           <Card
-            header="Data Engineering"
-            subHeader="CONTEXT & PREDICTION"
-            description="We embed data and machine learning into the very fabric of what we build."
+            header="Staff augmentation"
+            subHeader={'Fill and open role'.toUpperCase()}
+            description="Expand your team with Istanbuls top tech talent, seamlessly integrated into your Uk based team."
           >
             <Data />
           </Card>
         </Parallax>
         <Parallax speed={5}>
           <Card
-            header="Design"
-            subHeader="USER CENTERED EXPERIENCES"
-            description="We build digital experiences that are personalised and natural; like an extension."
+            header="Agile team"
+            subHeader={'Time and Material'.toUpperCase()}
+            description="Have a dedicated engineer team deliver your project with award winning expertise on a T&M basis."
           >
             <Design />
           </Card>
         </Parallax>
         <Parallax speed={-7}>
           <Card
-            header="Data Engineering"
-            subHeader="CONTEXT & PREDICTION"
-            description="We embed data and machine learning into the very fabric of what we build."
+            header="Discover and Delivery"
+            subHeader={'Fixed scope'.toUpperCase()}
+            description="Let us take full ownership of your project with a set budget and timeframe."
           >
             <Data />
           </Card>
         </Parallax>
+          <Card
+            header="Full stack software engineering"
+            subHeader="USER CENTERED EXPERIENCES"
+            description="We build digital experiences that are personalised and natural; like an extension."
+          >
+            <Design />
+          </Card>
+          <Card
+            header="Data Engineering"
+            subHeader="USER CENTERED EXPERIENCES"
+            description="We build digital experiences that are personalised and natural; like an extension."
+          >
+            <Design />
+          </Card>
       </div>
-      <HeaderOutlined text="we use" />
+
+      <div className={styles.headerBottom}>
+        <HeaderOutlined text="we use" />
+      </div>
       <Carousel />
     </div>
   );

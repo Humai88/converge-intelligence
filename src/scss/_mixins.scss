@@ -27,7 +27,7 @@
 @mixin content {
   margin-top: 7rem;
   min-height: 100vh;
+  @include devices(mobile) {
+    margin-top: 1rem;
+  }
 }
-// @include devices(tablet) {
-//   background: lightblue;
-// }

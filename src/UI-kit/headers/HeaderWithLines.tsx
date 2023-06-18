@@ -4,7 +4,7 @@ import { Parallax } from 'react-scroll-parallax';
 
 export const HeaderWithLines: React.FC<HeaderProps> = ({text}) => {
   return (
-    <Parallax speed={-3}>
+    <Parallax speed={4}>
     <div className={styles.wrapper}>
       <h2>{text}</h2>
     </div>

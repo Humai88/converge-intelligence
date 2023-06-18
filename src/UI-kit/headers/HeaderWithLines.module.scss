@@ -22,6 +22,9 @@
     position: relative;
     vertical-align: middle;
     width: 358px;
+    @include devices(mobile) {
+      width: 100px;
+    }
   }
   
   h2:before {

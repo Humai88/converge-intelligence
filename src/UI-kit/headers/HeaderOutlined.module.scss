@@ -10,5 +10,8 @@
     -webkit-text-stroke: 1px $color-text;
     font-family: 'Bold';
     padding: 8px;
+    @include devices(mobile) {
+      font-size: 40px;
+    }
   }
 }

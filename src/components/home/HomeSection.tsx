@@ -1,4 +1,4 @@
-import React, { useRef, useState} from 'react';
+import React, { useRef, useState } from 'react';
 import styles from './HomeSection.module.scss';
 import { Header } from './header/Header';
 import { Main } from './main/Main';
@@ -15,7 +15,7 @@ export const HomeSection = () => {
       <CSSTransition
         in={showMenu}
         nodeRef={nodeRef}
-        timeout={1200}
+        timeout={1000}
         classNames={{
           enterActive: `${styles.navbarAppear}`,
           exitActive: `${styles.navbarHide}`,
@@ -30,7 +30,7 @@ export const HomeSection = () => {
         icon={<FiMenu size={20} />}
         onClick={() => setShowMenu(true)}
       />
-      <Main/>
+      <Main />
     </div>
   );
 };

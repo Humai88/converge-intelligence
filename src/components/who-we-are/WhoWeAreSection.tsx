@@ -51,14 +51,18 @@ Zvi is a member of the Israeli and New York Bar Association, and served in a spe
           </div>
         </div>
       </div>
-      
+
       <div className={styles.bottomSection}>
-        <HeaderOutlined text="Thinkers. Doers." />
-        <HeaderOutlined text="Builders." />
-        <p className={styles.bottomHeader}>Technology is a team sport</p>
+        <HeaderOutlined text="Experts. Enablers." />
+        <HeaderOutlined text="Problem-solvers" />
+        <p className={styles.bottomHeader}>
+          Blending expertise for exceptional results
+        </p>
         <p className={styles.bottomText}>
-          We are passionate about combining our skills, coming together<br/> as one
-          to solve technology challenges at any scale.
+          We believe that innovation is fuled by blending expertise from
+          different fields,  <br/>  backgrounds and industiroes. We know that building
+          tomorrows technology requires a team effort, <br/>  which is why we prioritse
+          collaboration and ownership in everything we do.
         </p>
       </div>
     </div>
