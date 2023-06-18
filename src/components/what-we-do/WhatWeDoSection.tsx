@@ -16,7 +16,7 @@ export const WhatWeDoSection = () => {
         <HeaderOutlined text="we do" />
       </div>
       <div className={styles.cardsWrapper}>
-        <Parallax speed={-7}>
+        <Parallax speed={-5}>
           <Card
             header="Staff augmentation"
             subHeader={'Fill and open role'.toUpperCase()}
@@ -34,7 +34,7 @@ export const WhatWeDoSection = () => {
             <Design />
           </Card>
         </Parallax>
-        <Parallax speed={-7}>
+        <Parallax speed={-5}>
           <Card
             header="Discover and Delivery"
             subHeader={'Fixed scope'.toUpperCase()}

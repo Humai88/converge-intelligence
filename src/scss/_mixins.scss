@@ -29,5 +29,6 @@
   min-height: 100vh;
   @include devices(mobile) {
     margin-top: 1rem;
+    min-height: 70vh;
   }
 }
