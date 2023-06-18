@@ -5,7 +5,7 @@ import { HeaderOutlined } from '../../UI-kit/headers/HeaderOutlined';
 import map from "./../../assets/images/World-data.svg"
 export const WhereWeDevelopSection = () => {
   return (
-    <div className={styles.content}>
+    <div id="whereWeAre" className={styles.content}>
       <HeaderWithLines text="where" />
       <HeaderOutlined text="we are" />
       <div className={styles.map}>

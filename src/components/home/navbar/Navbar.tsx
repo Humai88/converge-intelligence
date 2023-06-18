@@ -44,17 +44,6 @@ export const Navbar: React.FC<NavbarProps> = ({
           <Link
             onClick={onClick}
             activeClass="active"
-            to="howWeDo"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={1100}
-          >
-            <LinkItem text="how we do" />
-          </Link>
-          <Link
-            onClick={onClick}
-            activeClass="active"
             to="whereWeAre"
             spy={true}
             smooth={true}
@@ -62,17 +51,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             duration={1100}
           >
             <LinkItem text="where we are" />
-          </Link>
-          <Link
-            onClick={onClick}
-            activeClass="active"
-            to="smartCalculation"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={1100}
-          >
-            <LinkItem text="smart calculation" />
           </Link>
           <Link
             onClick={onClick}
