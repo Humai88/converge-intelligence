@@ -17,7 +17,9 @@ export const WhoWeAreSection = () => {
       </div>
       <div className={styles.infoSection}>
         <div className={styles.videoWrapper}>
-          <VideoCard />
+      <div className={styles.video}>
+      <VideoCard />
+      </div>
         </div>
         <div className={styles.photosWrapper}>
           <div className={styles.person1}>

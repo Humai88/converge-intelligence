@@ -2,8 +2,7 @@ import React from 'react';
 import styles from './WhereWeDevelopSection.module.scss';
 import { HeaderWithLines } from '../../UI-kit/headers/HeaderWithLines';
 import { HeaderOutlined } from '../../UI-kit/headers/HeaderOutlined';
-import map from "./../../assets/images/map.svg"
-
+import map from "./../../assets/images/World-data.svg"
 export const WhereWeDevelopSection = () => {
   return (
     <div className={styles.content}>

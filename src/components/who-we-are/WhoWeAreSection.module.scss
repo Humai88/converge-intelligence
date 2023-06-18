@@ -4,17 +4,39 @@
   .infoSection {
     display: flex;
     margin-top: 4rem;
-    height: 700px;
+    height: auto;
     padding: 1rem 0;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    @include devices(mobile) {
+      margin-top: 1rem;
+      gap: 2rem;
+    }
     .videoWrapper {
-      width: 40%;
-      display: flex;
-      margin-left: 250px;
-      align-items: center;
+      width: 45%;
+      position: relative;
+      height: 600px;
+      @include devices(mobile) {
+        width: 80%;
+        height: 300px;
+      }
+      .video {
+        position: absolute;
+        left: 240px;
+        @include devices(mobile) {
+          left: 0;
+        }
+      }
     }
     .photosWrapper {
-      width: 60%;
+      width: 55%;
+      height: 600px;
       position: relative;
+      @include devices(mobile) {
+        width: 80%;
+        height: 350px;
+      }
       .person1 {
         position: absolute;
         top: 0;
@@ -22,28 +44,44 @@
       .person2 {
         position: absolute;
         top: 100px;
-        right: 250px
+        right: 250px;
+        @include devices(mobile) {
+          right: 0;
+        }
       }
       .person3 {
         position: absolute;
-        top: 350px;
+        top: 320px;
         left: 100px;
+        @include devices(mobile) {
+          left: 20px;
+          top: 200px;
+        }
       }
     }
   }
-  .bottomSection{
+  .bottomSection {
     text-align: center;
     margin-top: 2rem;
-    .bottomHeader{
+    @include devices(mobile) {
+      padding: 0 1rem;
+      margin-bottom: 5rem;
+    }
+    .bottomHeader {
       font-size: 32px;
-      font-family: "Medium";
-
+      font-family: 'Medium';
+      @include devices(mobile) {
+        font-size: 20px;
+        margin-top: 1rem;
+      }
     }
     .bottomText {
       font-size: 18px;
-      font-family: "Light";
+      font-family: 'Light';
       margin-top: 1rem;
-
+      @include devices(mobile) {
+        font-size: 14px;
+      }
     }
   }
 }

@@ -1,24 +1,40 @@
 @import './../../scss/global.scss';
 .content{
   @include content;
+  
   .map{
-    width: 1351px;
-    height: 1296px;
+    width: 1151px;
+    height: 1096px;
     margin: 0 auto;
-    margin-top: -12rem;
+    margin-top: 3rem;
+    @include devices(mobile) {
+    width: 350px;
+    height: 350px;
+    }
   }
   .bottomSection{
     text-align: center;
-    margin-top: 2rem;
+    margin-top: -20rem;
+    @include devices(mobile) {
+      padding: 0 1rem;
+      margin-top: -5rem;
+    }
     .bottomHeader{
       font-size: 32px;
       font-family: "Medium";
+      @include devices(mobile) {
+        font-size: 20px;
+        margin-top: 1rem;
+      }
 
     }
     .bottomText {
       font-size: 18px;
       font-family: "Light";
       margin-top: 1rem;
+      @include devices(mobile) {
+        font-size: 14px;
+      }
 
     }
   }

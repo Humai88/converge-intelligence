@@ -1,10 +1,14 @@
 @import './../../../scss/global.scss';
 .container {
-position: relative;
+  position: relative;
   .videoWrapper {
     position: relative;
     width: 450px;
     height: 450px;
+    @include devices(mobile) {
+      width: 300px;
+      height: 300px;
+    }
     img {
       height: 420px;
       width: 420px;
@@ -15,6 +19,10 @@ position: relative;
       right: 0;
       bottom: 0;
       z-index: 2;
+      @include devices(mobile) {
+        width: 270px;
+        height: 270px;
+      }
     }
     .videoOutline {
       position: absolute;
@@ -25,12 +33,15 @@ position: relative;
       border-radius: 15px;
       left: 0px;
       top: 0px;
+      @include devices(mobile) {
+        width: 270px;
+        height: 270px;
+      }
     }
-    .mainBtn{
+    .mainBtn {
       position: absolute;
       bottom: 0;
       right: 0;
     }
   }
-
 }

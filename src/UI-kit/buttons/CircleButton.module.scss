@@ -8,6 +8,10 @@
   background-color: $color-text;
   outline: none;
   border: none;
+  @include devices(mobile) {
+    height: 40px;
+    width: 40px;
+  }
   &:hover{
     animation: pulse 1.5s infinite;
   }
