@@ -1,5 +1,5 @@
 import React from 'react';
-import videoBg from './../../../assets/video/video-bg-2.mp4';
+import videoBg from './../../../assets/video/purple.mp4';
 import styles from './Main.module.scss';
 
 export const Video = () => {
