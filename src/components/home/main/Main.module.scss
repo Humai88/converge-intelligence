@@ -3,6 +3,9 @@
 .wrapper {
   position: relative;
   padding: 0 2rem;
+  @include devices(mobile) {
+    margin-bottom: 4rem;
+  }
   h2 {
     font-family: 'Medium';
   }
@@ -35,7 +38,7 @@
         font-family: 'Bold';
         @include devices(mobile) {
           font-size: 46px;
-          line-height: 30px;
+          line-height: 10px;
         }
       }
       .subText {
@@ -46,7 +49,7 @@
         @include devices(mobile) {
           width: 340px;
           margin-top: 2rem;
-          height: 130px;
+          height: 110px;
         }
         h3 {
           font-size: 32px;
@@ -73,6 +76,7 @@
           font-family: 'Thin';
           @include devices(mobile) {
             font-size: 14px;
+            margin-top: 1rem;
           }
         }
       }
@@ -111,7 +115,6 @@
     width: 600px;
     height: 600px;
     @include devices(mobile) {
-     
     }
   }
 }

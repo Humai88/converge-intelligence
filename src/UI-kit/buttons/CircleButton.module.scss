@@ -8,12 +8,14 @@
   background-color: $color-text;
   outline: none;
   border: none;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @include devices(mobile) {
     height: 40px;
     width: 40px;
   }
-  &:hover{
+  &:hover {
     animation: pulse 1.5s infinite;
   }
 }
