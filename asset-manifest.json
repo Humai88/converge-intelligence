@@ -1,37 +1,16 @@
 {
   "files": {
-    "main.css": "/converge-intelligence/static/css/main.483c4763.css",
-    "main.js": "/converge-intelligence/static/js/main.6098cb47.js",
+    "main.css": "/converge-intelligence/static/css/main.0545ec84.css",
+    "main.js": "/converge-intelligence/static/js/main.5f972caf.js",
     "static/js/787.39b04521.chunk.js": "/converge-intelligence/static/js/787.39b04521.chunk.js",
     "static/media/purple.mp4": "/converge-intelligence/static/media/purple.60813f632c3d8e0dc2d7.mp4",
-    "static/media/102.svg": "/converge-intelligence/static/media/102.6c872be4c55923e2a579.svg",
-    "static/media/SourceSansPro-Regular.ttf": "/converge-intelligence/static/media/SourceSansPro-Regular.df87f53caf449a3b7572.ttf",
-    "static/media/SourceSansPro-Black.ttf": "/converge-intelligence/static/media/SourceSansPro-Black.3633cc84b6efe1f1515e.ttf",
-    "static/media/SourceSansPro-Bold.ttf": "/converge-intelligence/static/media/SourceSansPro-Bold.2dec2f24e3bdf2c6862e.ttf",
-    "static/media/SourceSansPro-ExtraLight.ttf": "/converge-intelligence/static/media/SourceSansPro-ExtraLight.ac6819c958618affec45.ttf",
-    "static/media/SourceSansPro-Light.ttf": "/converge-intelligence/static/media/SourceSansPro-Light.9bbfd7cb5e722de4b9f4.ttf",
-    "static/media/video-cover.png": "/converge-intelligence/static/media/video-cover.a398ef3cf46aaed5ecf0.png",
-    "static/media/person-3.png": "/converge-intelligence/static/media/person-3.2a1b3eea92f7a1982495.png",
-    "static/media/person-1.png": "/converge-intelligence/static/media/person-1.74f03c2d13b13eb18855.png",
-    "static/media/person-2.png": "/converge-intelligence/static/media/person-2.3ce8606d500bdf84ce6a.png",
-    "static/media/World-data.svg": "/converge-intelligence/static/media/World-data.22d2beaa7b424b1db48304e39ccd2af1.svg",
-    "static/media/6.svg": "/converge-intelligence/static/media/6.7d01774f146b01eedeeb25c67f740fea.svg",
-    "static/media/logo-1.svg": "/converge-intelligence/static/media/logo-1.5aafb4691bda56bad7c76255bf7780a5.svg",
-    "static/media/9.svg": "/converge-intelligence/static/media/9.56237d41b490ac51a76dbaf9cfce6aef.svg",
-    "static/media/4.svg": "/converge-intelligence/static/media/4.c8f49d1da87d45f7f68cecca2bf5d17e.svg",
-    "static/media/2.svg": "/converge-intelligence/static/media/2.f33bc6771ce5b7020a1c54fb380df5e1.svg",
-    "static/media/8.svg": "/converge-intelligence/static/media/8.51fdb33da3f01d62265c4f1a0391bd9b.svg",
-    "static/media/3.svg": "/converge-intelligence/static/media/3.06de47489a00b568e04274f251d28b6c.svg",
-    "static/media/5.svg": "/converge-intelligence/static/media/5.3b5a25231913785d063eb399a675706b.svg",
-    "static/media/1.svg": "/converge-intelligence/static/media/1.ce088b851d44c724fe9124e860d5344a.svg",
     "index.html": "/converge-intelligence/index.html",
-    "static/media/7.svg": "/converge-intelligence/static/media/7.a3c86dc7374187679701fc189e817dff.svg",
-    "main.483c4763.css.map": "/converge-intelligence/static/css/main.483c4763.css.map",
-    "main.6098cb47.js.map": "/converge-intelligence/static/js/main.6098cb47.js.map",
+    "main.0545ec84.css.map": "/converge-intelligence/static/css/main.0545ec84.css.map",
+    "main.5f972caf.js.map": "/converge-intelligence/static/js/main.5f972caf.js.map",
     "787.39b04521.chunk.js.map": "/converge-intelligence/static/js/787.39b04521.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.483c4763.css",
-    "static/js/main.6098cb47.js"
+    "static/css/main.0545ec84.css",
+    "static/js/main.5f972caf.js"
   ]
 }
