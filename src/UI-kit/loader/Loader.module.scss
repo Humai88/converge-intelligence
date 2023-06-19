@@ -32,8 +32,8 @@ $delay: 0.5;
   grid-template-rows: repeat(3, 1fr);
   height: (3 * $size);
   width: (3 * $size);
-margin: 0 auto;
-margin-top: 45vh;
+  margin: 0 auto;
+  margin-top: 45vh;
   transform: rotate(45deg);
 
   @include devices(mobile) {
