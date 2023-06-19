@@ -20,16 +20,16 @@ function App() {
   return (
     <ParallaxProvider>
       <Video />
-      {loader ? (
+
         <Loader />
-      ) : (
+{/* 
         <div className={styles.content}>
           <HomeSection />
           <WhatWeDoSection />
           <WhoWeAreSection />
           <WhereWeDevelopSection />
-        </div>
-      )}
+        </div> */}
+  
     </ParallaxProvider>
   );
 }
