@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/converge-intelligence/static/css/main.eb7e7bb7.css",
-    "main.js": "/converge-intelligence/static/js/main.88f03447.js",
+    "main.css": "/converge-intelligence/static/css/main.05ee1f01.css",
+    "main.js": "/converge-intelligence/static/js/main.a5ec7adc.js",
     "static/js/787.39b04521.chunk.js": "/converge-intelligence/static/js/787.39b04521.chunk.js",
     "static/media/102.svg": "/converge-intelligence/static/media/102.6c872be4c55923e2a579.svg",
     "static/media/SourceSansPro-Regular.ttf": "/converge-intelligence/static/media/SourceSansPro-Regular.df87f53caf449a3b7572.ttf",
@@ -25,12 +25,12 @@
     "static/media/1.svg": "/converge-intelligence/static/media/1.ce088b851d44c724fe9124e860d5344a.svg",
     "index.html": "/converge-intelligence/index.html",
     "static/media/7.svg": "/converge-intelligence/static/media/7.a3c86dc7374187679701fc189e817dff.svg",
-    "main.eb7e7bb7.css.map": "/converge-intelligence/static/css/main.eb7e7bb7.css.map",
-    "main.88f03447.js.map": "/converge-intelligence/static/js/main.88f03447.js.map",
+    "main.05ee1f01.css.map": "/converge-intelligence/static/css/main.05ee1f01.css.map",
+    "main.a5ec7adc.js.map": "/converge-intelligence/static/js/main.a5ec7adc.js.map",
     "787.39b04521.chunk.js.map": "/converge-intelligence/static/js/787.39b04521.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb7e7bb7.css",
-    "static/js/main.88f03447.js"
+    "static/css/main.05ee1f01.css",
+    "static/js/main.a5ec7adc.js"
   ]
 }
