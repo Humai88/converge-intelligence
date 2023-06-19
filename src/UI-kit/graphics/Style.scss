@@ -40,8 +40,8 @@
   width: 800px;
   height: 800px;
   @include devices(mobile) {
-    width: 350px;
-    height: 350px; 
+    width: 320px;
+    height: 320px; 
     margin-top: 2rem;
   }
 }

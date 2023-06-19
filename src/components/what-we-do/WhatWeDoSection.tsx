@@ -16,7 +16,7 @@ export const WhatWeDoSection = () => {
         <HeaderOutlined text="we do" />
       </div>
       <div className={styles.cardsWrapper}>
-        <Parallax speed={-5}>
+        <Parallax speed={-3}>
           <Card
             header="Staff augmentation"
             subHeader={'Fill and open role'.toUpperCase()}
@@ -25,7 +25,7 @@ export const WhatWeDoSection = () => {
             <Data />
           </Card>
         </Parallax>
-        <Parallax speed={5}>
+        <Parallax speed={3}>
           <Card
             header="Agile team"
             subHeader={'Time and Material'.toUpperCase()}
@@ -34,7 +34,7 @@ export const WhatWeDoSection = () => {
             <Design />
           </Card>
         </Parallax>
-        <Parallax speed={-5}>
+        <Parallax speed={-3}>
           <Card
             header="Discover and Delivery"
             subHeader={'Fixed scope'.toUpperCase()}
@@ -43,13 +43,16 @@ export const WhatWeDoSection = () => {
             <Data />
           </Card>
         </Parallax>
+        <Parallax speed={3}>
           <Card
             header="Full stack software engineering"
             subHeader="USER CENTERED EXPERIENCES"
             description="We build digital experiences that are personalised and natural; like an extension."
           >
-            <Design />
+            <Data />
           </Card>
+        </Parallax>
+        <Parallax speed={-3}>
           <Card
             header="Data Engineering"
             subHeader="USER CENTERED EXPERIENCES"
@@ -57,6 +60,7 @@ export const WhatWeDoSection = () => {
           >
             <Design />
           </Card>
+        </Parallax>
       </div>
 
       <div className={styles.headerBottom}>

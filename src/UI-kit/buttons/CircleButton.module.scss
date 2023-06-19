@@ -8,6 +8,7 @@
   background-color: $color-text;
   outline: none;
   border: none;
+  text-align: center;
   @include devices(mobile) {
     height: 40px;
     width: 40px;

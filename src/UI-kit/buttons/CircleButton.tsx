@@ -6,7 +6,7 @@ export const CircleButton: React.FC<DefaultButtonPropsType & { icon: JSX.Element
   ...restProps
 }) => {
   return (
-    <IconContext.Provider value={{ color: '#24303B', size: '1.7rem' }}>
+    <IconContext.Provider value={{ color: '#24303B', size: '1.4rem' }}>
       <button className={styles.button} {...restProps}
       >
         {icon}

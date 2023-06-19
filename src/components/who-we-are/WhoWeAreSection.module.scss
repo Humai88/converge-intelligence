@@ -67,6 +67,17 @@
       padding: 0 1rem;
       margin-bottom: 5rem;
     }
+    .bottomOutlined {
+      color: transparent;
+      -webkit-text-stroke: 1px $color-text;
+      font-family: 'Bold';
+      font-size: 54px;
+      margin-bottom: 2rem;
+      @include devices(mobile) {
+        font-size: 30px;
+        margin-bottom: 1.5rem;
+      }
+    }
     .bottomHeader {
       font-size: 32px;
       font-family: 'Medium';

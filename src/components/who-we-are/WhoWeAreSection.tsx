@@ -55,8 +55,11 @@ Zvi is a member of the Israeli and New York Bar Association, and served in a spe
       </div>
 
       <div className={styles.bottomSection}>
-        <HeaderOutlined text="Experts. Enablers." />
-        <HeaderOutlined text="Problem-solvers" />
+        <div className={styles.bottomOutlined}>
+        <p >Experts. Enablers.</p>
+        <p >Problem-solvers</p>
+        </div>
+    
         <p className={styles.bottomHeader}>
           Blending expertise for exceptional results
         </p>
