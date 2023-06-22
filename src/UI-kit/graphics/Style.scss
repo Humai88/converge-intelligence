@@ -50,9 +50,9 @@
   width: 600px;
   height: 600px; 
   @include devices(mobile) {
-    width: 350px;
-    height: 350px; 
-    margin-top: 1rem;
+    width: 320px;
+    height: 320px; 
+    margin-top: -1rem;
   }
 }
 
