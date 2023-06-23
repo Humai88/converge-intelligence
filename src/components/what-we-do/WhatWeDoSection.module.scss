@@ -1,10 +1,13 @@
 @import './../../scss/global.scss';
 .content {
-  @include content;
+  margin-top: 7rem;
+  @include devices(mobile) {
+    margin-top: 1rem;
+  }
   .cardsWrapper {
     display: flex;
     justify-content: center;
-    gap:120px;
+    gap: 120px;
     width: 70%;
     flex-wrap: wrap;
     margin: 0 auto;

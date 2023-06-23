@@ -37,23 +37,47 @@
   }
 }
 .svg-wrapper{
-  width: 800px;
-  height: 800px;
   @include devices(mobile) {
     width: 320px;
     height: 320px; 
     margin-top: 2rem;
   }
+  
+  @include devices(laptop) {
+    width: 600px;
+    height: 600px;
+  }
+
+  @include devices(desktop) {
+    width: 800px;
+    height: 800px; 
+  }
+  @include devices(desktopLarge) {
+    width: 950px;
+    height: 950px; 
+  }
 }
 
-.svg-final-wrapper{
-  width: 600px;
-  height: 600px; 
+.svg-final-wrapper{ 
   @include devices(mobile) {
     width: 320px;
     height: 320px; 
     margin-top: -1rem;
   }
+  @include devices(laptop) {
+    width: 600px;
+    height: 600px;
+  }
+
+  @include devices(desktop) {
+    width: 700px;
+    height: 700px; 
+  }
+  @include devices(desktopLarge) {
+    width: 800px;
+    height: 800px; 
+  }
+
 }
 
 .icon-wrapper {

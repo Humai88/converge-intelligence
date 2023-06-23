@@ -23,7 +23,7 @@
     vertical-align: middle;
     width: 358px;
     @include devices(mobile) {
-      width: 100px;
+      width: 60px;
     }
   }
   
@@ -37,5 +37,20 @@
     margin-right: -50%;
   }
 
+  @include devices(desktopLarge) {
+  margin-top: 7rem;
+   }
+ 
+   @include devices(desktop) {
+    margin-top: 5rem;
+   }
+ 
+   @include devices(laptop) {
+    margin-top: 4rem;
+   }
+ 
+   @include devices(mobile) {
+     margin-top: 1rem;
+   }
 }
 

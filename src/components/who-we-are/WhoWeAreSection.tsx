@@ -17,9 +17,9 @@ export const WhoWeAreSection = () => {
       </div>
       <div className={styles.infoSection}>
         <div className={styles.videoWrapper}>
-      <div className={styles.video}>
-      <VideoCard />
-      </div>
+          <div className={styles.video}>
+            <VideoCard />
+          </div>
         </div>
         <div className={styles.photosWrapper}>
           <div className={styles.person1}>
@@ -56,18 +56,18 @@ Zvi is a member of the Israeli and New York Bar Association, and served in a spe
 
       <div className={styles.bottomSection}>
         <div className={styles.bottomOutlined}>
-        <p >Experts. Enablers.</p>
-        <p >Problem-solvers</p>
+          <p>Experts. Enablers.</p>
+          <p>Problem-solvers</p>
         </div>
-    
+
         <p className={styles.bottomHeader}>
           Blending expertise for exceptional results
         </p>
         <p className={styles.bottomText}>
           We believe that innovation is fuled by blending expertise from
-          different fields,  <br/>  backgrounds and industiroes. We know that building
-          tomorrows technology requires a team effort, <br/>  which is why we prioritse
-          collaboration and ownership in everything we do.
+          different fields, <br /> backgrounds and industiroes. We know that
+          building tomorrows technology requires a team effort, <br /> which is
+          why we prioritse collaboration and ownership in everything we do.
         </p>
       </div>
     </div>

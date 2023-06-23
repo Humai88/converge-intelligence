@@ -1,6 +1,8 @@
 @import './../../scss/global.scss';
 .content{
-
+  @include content;
+  margin-top: 0;
+  padding-top: 2rem;
 .navbarAppear{
   animation: showNavbar 1s forwards;
 }
