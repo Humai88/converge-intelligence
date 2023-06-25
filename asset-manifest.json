@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/converge-intelligence/static/css/main.d7313871.css",
+    "main.css": "/converge-intelligence/static/css/main.5cfd17a9.css",
     "main.js": "/converge-intelligence/static/js/main.2fffe929.js",
     "static/js/787.39b04521.chunk.js": "/converge-intelligence/static/js/787.39b04521.chunk.js",
     "static/media/purple.mp4": "/converge-intelligence/static/media/purple.60813f632c3d8e0dc2d7.mp4",
@@ -26,12 +26,12 @@
     "static/media/1.svg": "/converge-intelligence/static/media/1.ce088b851d44c724fe9124e860d5344a.svg",
     "index.html": "/converge-intelligence/index.html",
     "static/media/7.svg": "/converge-intelligence/static/media/7.a3c86dc7374187679701fc189e817dff.svg",
-    "main.d7313871.css.map": "/converge-intelligence/static/css/main.d7313871.css.map",
+    "main.5cfd17a9.css.map": "/converge-intelligence/static/css/main.5cfd17a9.css.map",
     "main.2fffe929.js.map": "/converge-intelligence/static/js/main.2fffe929.js.map",
     "787.39b04521.chunk.js.map": "/converge-intelligence/static/js/787.39b04521.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7313871.css",
+    "static/css/main.5cfd17a9.css",
     "static/js/main.2fffe929.js"
   ]
 }
