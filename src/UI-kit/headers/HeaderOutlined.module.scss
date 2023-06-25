@@ -13,5 +13,8 @@
     @include devices(mobile) {
       font-size: 32px;
     }
+    @include devices(tablet) {
+      font-size: 42px;
+    }
   }
 }

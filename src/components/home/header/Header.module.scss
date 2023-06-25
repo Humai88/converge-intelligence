@@ -1,22 +1,18 @@
 @import './../../../scss/global.scss';
 
 .headerWrapper {
+  @include content;
+  margin-top: 0;
+  padding-top: 2rem;
   display: flex;
   justify-content: space-between;
-  padding-top: 2rem;
   align-items: center;
   position: relative;
-  @include devices(mobile) {
-    padding: 2rem 1rem 0 1rem;
-  }
   .logo {
     width: 160px;
     @include devices(mobile) {
       width: 120px;
     }
   }
-//  .btn{
-//   position: fixed;
-//   right: 2rem;
-//  }
+
 }

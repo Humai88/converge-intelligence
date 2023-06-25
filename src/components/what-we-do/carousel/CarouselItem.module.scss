@@ -1,8 +1,8 @@
 @import './../../../scss/global.scss';
 
 .wrapper {
-  width: 220px;
-  height: 220px;
+  width: 14rem;
+  height: 14rem;
   border: 1px solid $color-text;
   display: flex;
   align-items: center;
@@ -10,9 +10,19 @@
   border-radius: 50%;
   padding: 38px;
   @include devices(mobile) {
-    width: 120px;
-    height: 120px;
+    width: 7rem;
+    height: 7rem;
     padding: 24px;
+  }
+  @include devices(tablet) {
+    width: 9rem;
+    height: 9rem;
+    padding: 28px;
+  }
+  @include devices(desktopLarge) {
+    width: 17rem;
+    height: 17rem;
+    padding: 40px;
   }
   img {
     width: 95%;

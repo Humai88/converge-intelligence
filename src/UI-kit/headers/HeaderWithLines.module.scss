@@ -11,6 +11,9 @@
     @include devices(mobile) {
       font-size: 50px;
     }
+    @include devices(tablet) {
+      font-size: 70px;
+    }
   }
   
   h2:before,
@@ -24,6 +27,9 @@
     width: 358px;
     @include devices(mobile) {
       width: 60px;
+    }
+    @include devices(tablet) {
+      width: 100px;
     }
   }
   
@@ -52,5 +58,8 @@
    @include devices(mobile) {
      margin-top: 1rem;
    }
+   @include devices(tablet) {
+    margin-top: 4rem;
+  }
 }
 

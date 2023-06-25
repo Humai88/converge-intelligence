@@ -17,6 +17,10 @@
       justify-content: center;
       height: 68vh;
     }
+    @include devices(tablet) {
+      flex-wrap: wrap;
+      justify-content: center;
+     }
     .textWrapper {
       width: 863px;
       padding-top: 12rem;
@@ -26,6 +30,11 @@
         order: 2;
         margin-left: 1rem;
       }
+      @include devices(tablet) {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        order: 1;
+       }
       @include devices(laptop) {
         padding-top: 5rem;
       }
@@ -33,26 +42,26 @@
         font-size: 72px;
         font-weight: 800;
         line-height: 72px;
-        @include devices(mobile) {
-          font-size: 36px;
-          line-height: 20px;
-        }
         @include devices(laptop) {
           font-size: 56px;
           line-height: 56px;
+        }
+        @include devices(mobile) {
+          font-size: 36px;
+          line-height: 20px;
         }
       }
       .coloredText {
         font-size: 90px;
         line-height: 42px;
         font-family: 'Bold';
+        @include devices(laptop) {
+          font-size: 74px;
+        }
         @include devices(mobile) {
           font-size: 46px;
           line-height: 10px;
           width: 340px;
-        }
-        @include devices(laptop) {
-          font-size: 74px;
         }
       }
       .subText {
@@ -61,6 +70,9 @@
         position: relative;
         margin-top: 5rem;
         @include devices(mobile) {
+          display: none;
+        }
+        @include devices(tablet) {
           display: none;
         }
         h3 {

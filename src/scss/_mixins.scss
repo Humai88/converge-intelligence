@@ -2,22 +2,22 @@
 
 @mixin devices($breakpoint) {
   @if $breakpoint == mobile {
-    @media only screen and (min-width: 320px)  {
+    @media only screen and (min-width: 320px) and (max-width: 480px)  {
       @content;
     }
   }
   @if $breakpoint == tablet {
-    @media only screen and (min-width: 768px)  {
+    @media only screen and (min-width: 481px) and (max-width: 768px)  {
       @content;
     }
   }
   @if $breakpoint == laptop {
-    @media only screen and (min-width: 1440px)  {
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
       @content;
     }
   }
   @if $breakpoint == desktop {
-    @media only screen and (min-width: 1680px) {
+    @media only screen and (min-width: 1024px) and (max-width: 1680px) {
       @content;
     }
   }
@@ -30,7 +30,7 @@
 
 @mixin content {
   @include devices(desktopLarge) {
-   width: 1920px;
+   width: 1680px;
    margin: 0 auto;
   }
 
@@ -41,11 +41,20 @@
 
   @include devices(laptop) {
     padding: 0 3rem;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  @include devices(tablet) {
+    padding: 0 2rem;
+    width: 100%;
+    margin-top: 2rem;
   }
 
   @include devices(mobile) {
     padding: 0 1rem;
-    margin-top: 1rem;
-    min-height: 70vh;
+    width: 100%;
+    margin-top: 2rem;
   }
+
+  
 }
