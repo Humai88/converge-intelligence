@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from './PersonCard.module.scss';
 import { CircleButton } from '../../../UI-kit/buttons/CircleButton';
 import { FiPlus, FiX } from 'react-icons/fi';
+import { motion } from 'framer-motion';
 
 export const PersonCard: React.FC<PersonCardProps> = ({
   title,
@@ -37,14 +38,22 @@ export const PersonCard: React.FC<PersonCardProps> = ({
         </div>
       </div>
       {sideBarVisible && (
-        <div className={styles.modal}>
-          <div className={styles.sidebar}>
+        <div
+            className={styles.modal}>
+          <motion.div      initial={{ x: "-100%" }}
+            animate={{
+              x: 0
+            }}
+            exit={{
+              x: "100%"
+            }}
+            transition={{ type: "spring", bounce: 0, duration: 0.4 }} className={styles.sidebar}>
               <h2>{title}</h2>
               <div className={styles.main}>
                 <div>Experience</div>
                 <div>{experience}</div>
               </div>
-          </div>
+          </motion.div>
 
           <div className={styles.sidebarBtn}>
             <CircleButton
