@@ -19,7 +19,7 @@ function App() {
 
   return (
     <ParallaxProvider>
-      <Video />
+      {/* <Video /> */}
       {loader ? (
         <Loader />
       ) : (

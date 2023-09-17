@@ -1,22 +1,24 @@
 @import './../../scss/global.scss';
-.content{
+.content {
   @include content;
-  
-  .map{
+  @include devices(mobile) {
+    height: 100vh;
+  }
+  .map {
     width: 1151px;
     height: 1096px;
     margin: 0 auto;
     margin-top: 3rem;
     @include devices(mobile) {
-    width: 350px;
-    height: 350px;
+      width: 350px;
+      height: 350px;
     }
     @include devices(tablet) {
       width: 450px;
       height: 450px;
-      }
+    }
   }
-  .bottomSection{
+  .bottomSection {
     text-align: center;
     margin-top: -20rem;
     @include devices(mobile) {
@@ -28,23 +30,21 @@
       margin-top: -5rem;
       padding-bottom: 5rem;
     }
-    .bottomHeader{
+    .bottomHeader {
       font-size: 32px;
-      font-family: "Medium";
+      font-family: 'Medium';
       @include devices(mobile) {
         font-size: 20px;
         margin-top: 1rem;
       }
-
     }
     .bottomText {
       font-size: 18px;
-      font-family: "Light";
+      font-family: 'Light';
       margin-top: 1rem;
       @include devices(mobile) {
         font-size: 14px;
       }
-
     }
   }
 }

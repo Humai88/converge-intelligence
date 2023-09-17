@@ -14,6 +14,9 @@
     @include devices(tablet) {
       font-size: 70px;
     }
+    @include devices(desktop) {
+      font-size: 80px;
+    }
   }
   
   h2:before,

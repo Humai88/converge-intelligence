@@ -4,6 +4,9 @@
   @include devices(mobile) {
     margin-top: 1rem;
   }
+  @include devices(tablet) {
+    margin-top: 1rem;
+  }
   .cardsWrapper {
     display: flex;
     justify-content: center;
