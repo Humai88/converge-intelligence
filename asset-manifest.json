@@ -1,10 +1,8 @@
 {
   "files": {
-    "main.css": "/converge-intelligence/static/css/main.10f2b804.css",
-    "main.js": "/converge-intelligence/static/js/main.28f820ac.js",
+    "main.css": "/converge-intelligence/static/css/main.2078abe7.css",
+    "main.js": "/converge-intelligence/static/js/main.3df6d8e8.js",
     "static/js/787.39b04521.chunk.js": "/converge-intelligence/static/js/787.39b04521.chunk.js",
-    "static/media/purple.mp4": "/converge-intelligence/static/media/purple.60813f632c3d8e0dc2d7.mp4",
-    "static/media/102.svg": "/converge-intelligence/static/media/102.6c872be4c55923e2a579.svg",
     "static/media/SourceSansPro-Regular.ttf": "/converge-intelligence/static/media/SourceSansPro-Regular.df87f53caf449a3b7572.ttf",
     "static/media/SourceSansPro-Black.ttf": "/converge-intelligence/static/media/SourceSansPro-Black.3633cc84b6efe1f1515e.ttf",
     "static/media/SourceSansPro-Bold.ttf": "/converge-intelligence/static/media/SourceSansPro-Bold.2dec2f24e3bdf2c6862e.ttf",
@@ -26,12 +24,12 @@
     "static/media/1.svg": "/converge-intelligence/static/media/1.ce088b851d44c724fe9124e860d5344a.svg",
     "index.html": "/converge-intelligence/index.html",
     "static/media/7.svg": "/converge-intelligence/static/media/7.a3c86dc7374187679701fc189e817dff.svg",
-    "main.10f2b804.css.map": "/converge-intelligence/static/css/main.10f2b804.css.map",
-    "main.28f820ac.js.map": "/converge-intelligence/static/js/main.28f820ac.js.map",
+    "main.2078abe7.css.map": "/converge-intelligence/static/css/main.2078abe7.css.map",
+    "main.3df6d8e8.js.map": "/converge-intelligence/static/js/main.3df6d8e8.js.map",
     "787.39b04521.chunk.js.map": "/converge-intelligence/static/js/787.39b04521.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10f2b804.css",
-    "static/js/main.28f820ac.js"
+    "static/css/main.2078abe7.css",
+    "static/js/main.3df6d8e8.js"
   ]
 }
